@@ -1,0 +1,228 @@
+//Sobre Nosotros
+//Foto cesar + descripcion CP seguros
+.nosotros1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    background-color:#F1F3CE; 
+    justify-content: center;
+    align-items: center;
+    padding: 5% 1vw;
+    @media only screen and (max-width:480px){
+        flex-wrap:wrap;
+    }
+    .nosotrosCesar {
+        
+        img{
+        width: 80%;
+        margin: 0vh 30%;
+        @media only screen and (max-width:800px){
+            margin: 0vh 10%;
+        }
+        }
+    }
+    .contenedorTextosNosotros{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: left;
+        width: 50%;
+        padding: 1vh 4vw;
+        @media only screen and (max-width:800px){
+            width: 100%;
+        }
+        .CPSEGUROS{
+            font-size: 0.9em;
+            color:#F62A00;
+            text-align: left;
+            font-weight: bold;
+            padding: 1vh 1vw;
+        }
+        .titulosNosotros{
+            padding: 1vh 1vw;
+            .pNos1{
+                font-size: 1.5em;
+                color:#002936;
+                font-weight: bold;
+                border-bottom: 1px solid #002936;
+                text-align: left;
+                width: 30%;
+                @media only screen and (max-width:800px){
+                  width: 50%;
+                }
+            }
+            .pNos2{
+                font-size: 1em;
+                color:#002936;
+                text-align: left;
+                font-weight: bold;
+                color: #002936;
+
+            }
+        }
+        .descripcionNosotros{
+            color: #002936;
+            font-size: 1em;
+            text-align: left;
+            margin: 1vh 1vw;
+            width: 70%;
+            @media only screen and (max-width:800px){
+                width: 100%;
+            }
+        }
+    }
+}
+
+.nosotros2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .imagenTextoBlog{
+        width: 100%;
+        position: relative;
+        img{
+            width: 100%;
+        }
+        div{
+            background-color: #F1F3CE;
+            padding: 5vh 2vw;
+            width: 30%;
+            position: absolute;
+            top: 67%;
+            right: 12%;
+            @media only screen and (min-width:745px) and (max-width:1080px){
+                padding: 2vh 2vw;
+                width: 59%;
+                position: absolute;
+                top: 67%;
+                right: 0%;
+            }
+            @media only screen and (max-width:745px){
+                width: 100%;
+                position: relative;
+                padding: 3vh 2vw;
+                right: 0%;
+            }
+            .misionVision{
+                font-size: 1.2em;
+                font-weight: bold;
+                text-align: left;
+                color: #002936;
+            }
+            .misionVision2{
+                font-size: 1em;
+                text-align: left;
+                color: #002936;
+            }
+            .linkBlog{
+                font-size: 1em;
+                text-align: left;
+                font-weight: bold;
+                color:#F62A00;
+                text-decoration: none;
+                &:hover{
+                    color: #1E656D;
+                }
+            }
+        }
+    }
+    .valores{
+        background-color: #F1F3CE;
+        display: flex;
+        flex-direction: column;
+        padding: 15vh 4vw;
+        @media only screen and (max-width:745px){
+            padding: 1vh 1vw;
+        }
+        .nuestrosValores{
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #002936;
+            text-align: left;
+        }
+        .valoresContainer{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            @media only screen and (max-width:745px){
+                flex-wrap: wrap;
+            }
+            .valorBox{
+                width: 15vw;
+                background-color: white;
+                box-shadow:5px 5px 15px -6px #000000;
+                margin: 1vh 1vw;
+                @media only screen and (max-width:745px){
+                    width: 40%;
+                    
+                }
+                .valor{
+                    text-align: left;
+                    font-weight: bold;
+                    color: #002936;
+                    font-size: 1em;
+                    padding: 2vh 1vw;
+                }
+                i{
+                    color:#F62A00;
+                    font-size: 1.3em;
+                    padding:2vh 1vw;
+                }
+            }
+        }
+    }
+}
+
+.nosotros3{
+    background-color: #1E656D;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    .tituloNosotros3{
+        color: white;
+        font-weight: bold;
+        font-size: 1.5em;
+        margin: 4vh 5%;
+
+    }
+    .reviewsContainer{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        align-items: left;
+        margin: 1vh auto;
+        .stars{
+            display: flex;
+            flex-direction: row;
+            i{
+                color:rgba(255, 255, 0, 0.761);
+                font-size: 1em;
+                padding:2vh 1vw;
+            }
+        }
+        .reviewsName{
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+            i{
+                color:white;
+                font-size: 1.1em;
+                padding: 0vh 1vw;
+            }
+            p{
+                color:white;
+                font-weight: bold;
+                font-size: 1.1em;
+            }
+        }
+        .review{
+            color:white;
+            font-size: 1em;
+            margin-left: 1vw;
+        }
+    }
+}
