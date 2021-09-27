@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   user-select: none;
   scroll-behavior: smooth;
   background-color: #002936;
@@ -14,16 +14,19 @@ body {
 #NavBarContainer {
   background-color: #002936;
 }
+
 #NavBarContainer #navbarNav {
   justify-content: right;
   margin: 1vh 1vw;
 }
+
 #NavBarContainer .LogoNavBar {
   width: 7vw;
   padding: 1vh 1vw;
 }
+
 #NavBarContainer a {
-  color: #F1F3CE;
+  color: #f1f3ce;
   margin: 0vh 1vw;
   font-weight: 500;
   font-size: 1.1em;
@@ -38,6 +41,7 @@ footer {
   background-color: #002936;
   margin-top: 2vh;
 }
+
 footer .footerInfo {
   width: 100%;
   background-color: #002936;
@@ -50,10 +54,12 @@ footer .footerInfo {
   border-top: 1px solid #F1F3CE;
   padding-top: 4vh;
 }
+
 footer .footerInfo .footerAcerca {
   margin: 1vh 1vw;
   padding: 1vh 1vw;
 }
+
 footer .footerInfo .footerAcerca .ulAcerca {
   display: flex;
   flex-direction: column;
@@ -63,6 +69,7 @@ footer .footerInfo .footerAcerca .ulAcerca {
   color: #F1F3CE;
   font-size: 1em;
 }
+
 footer .footerInfo .footerAcerca .ulAcerca li {
   color: #F1F3CE;
   text-align: center;
@@ -70,10 +77,12 @@ footer .footerInfo .footerAcerca .ulAcerca li {
   font-weight: normal;
   font-size: 0.8em;
 }
+
 footer .footerInfo .footerAcerca .ulAcerca li a {
   text-decoration: none;
   color: #F1F3CE;
 }
+
 footer .footerInfo .footerSeguros {
   display: flex;
   flex-direction: column;
@@ -81,6 +90,7 @@ footer .footerInfo .footerSeguros {
   justify-content: center;
   margin: 0vh auto;
 }
+
 footer .footerInfo .footerSeguros p {
   color: #F1F3CE;
   font-weight: bold;
@@ -88,6 +98,7 @@ footer .footerInfo .footerSeguros p {
   margin-left: -45vw;
   font-size: 1em;
 }
+
 footer .footerInfo .footerSeguros div {
   display: flex;
   flex-direction: row;
@@ -95,6 +106,7 @@ footer .footerInfo .footerSeguros div {
   align-items: flex-start;
   justify-content: center;
 }
+
 footer .footerInfo .footerSeguros div ul {
   display: flex;
   flex-direction: column;
@@ -103,16 +115,19 @@ footer .footerInfo .footerSeguros div ul {
   font-weight: bold;
   font-size: 1em;
 }
+
 footer .footerInfo .footerSeguros div ul li {
   color: #F1F3CE;
   font-weight: normal;
   font-size: 0.8em;
 }
+
 footer .footerInfo .footerSeguros div ul li a {
   text-decoration: none;
   color: #F1F3CE;
   text-align: left;
 }
+
 footer .footerRedes {
   width: 100%;
   background-color: #002936;
@@ -123,20 +138,24 @@ footer .footerRedes {
   align-items: center;
   justify-content: space-around;
 }
+
 footer .footerRedes p {
   color: #F1F3CE;
   text-align: left;
   padding: 1vw 1vh;
   font-size: 0.8em;
 }
+
 footer .footerRedes div {
   display: flex;
   flex-direction: row;
 }
+
 footer .footerRedes div a {
   text-decoration: none;
   color: #F1F3CE;
 }
+
 footer .footerRedes div a #redes {
   color: #F1F3CE;
   background-color: rgba(128, 128, 128, 0.755);
@@ -146,4 +165,135 @@ footer .footerRedes div a #redes {
   font-size: 0.8em;
 }
 
+.carrousel__img {
+  height: 30%;
+  width: 100%;
+}
+
+.carrousel__divP {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 0%;
+  background-color: #002936be;
+  height: 100%;
+  width: 100%;
+}
+
+.carrousel__p {
+  position: relative;
+  width: 70%;
+  color: white;
+  font-size: 4.5em;
+  font-weight: bold;
+  margin: 10% 0 0 15%;
+}
+
+.carrousel .btn {
+  width: 13%;
+  height: 5%;
+  margin: 5% 0 0 15%;
+  font-size: 1.2em;
+  color: white;
+  background-color: #f62a00;
+  border: none;
+}
+
+.divTelefono {
+  display: flex;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+}
+
+.divTelefono__icon {
+  margin: 2%;
+  background-color: #f62a00;
+  height: 80%;
+  border-radius: 100%;
+}
+
+.divTelefono__icon__img {
+  padding: 30%;
+  height: 100%;
+}
+
+.divTelefono__h3 {
+  font-size: 3em;
+  font-weight: bold;
+  color: #002936;
+}
+
+.nuestrosSeguros {
+  background-color: #002936;
+  text-align: center;
+}
+
+.nuestrosSeguros__titulo {
+  padding-top: 20px;
+  color: #fff;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+.nuestrosSeguros__card {
+  padding: 100px 20px 20px 20px;
+  margin-top: 20px;
+  transition: all ease-in-out 0.3s;
+  background-size: cover;
+  border-radius: 18px;
+  border-bottom: 3px solid #fff;
+}
+
+.nuestrosSeguros__card__body {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.514);
+  border-radius: 18px;
+  text-align: left;
+}
+
+.nuestrosSeguros__card__body__p {
+  padding: 0%;
+}
+
+.nuestrosSeguros__card__body__h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.nuestrosSeguros__card__body .btn {
+  color: white;
+  background-color: #f62a00;
+  border: none;
+}
+
+.nuestrosSeguros__card:hover {
+  transform: translateY(-10px);
+  border-color: #f62a00;
+}
+
+#ahorroInversion {
+  background-image: url("../../imagenes/Seguros/segurosAhorro-330x330.png");
+}
+
+#vida {
+  background-image: url("../../imagenes/Seguros/segurosVida-330x330.png");
+}
+
+#automotor {
+  background-image: url("../../imagenes/Seguros/segurosAutomotor-330x330.png");
+}
+
+#bicicleta {
+  background-image: url("../../imagenes/Seguros/segurosBicicleta-330x330.png");
+}
+
+#hogar {
+  background-image: url("../../imagenes/Seguros/segurosHogar-330x330.png");
+}
+
+#pertenciasPersonales {
+  background-image: url("../../imagenes/Seguros/segurosMochila-330x330.png");
+}
 /*# sourceMappingURL=style.css.map */
