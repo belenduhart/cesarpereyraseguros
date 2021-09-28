@@ -1,0 +1,68 @@
+//Preguntas Frecuentes
+#FqContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #1E656D;
+    padding-bottom: 8vh;
+    .FqTitulo{
+        font-size: 2.5em;
+        color: #F1F3CE;
+        font-weight: bold;
+        text-align: left;
+        padding-left: 9vw;
+        padding-top: 7vh;
+    }
+    .QtContainer{
+        display: flex;
+        flex-direction: row;
+        padding: 1vh 9vw;
+        align-items: center;
+        margin-top: 2vh;
+        #QtIcon1{
+            color: #ef775f;
+            font-size: 2em;
+            background-color: #F1F3CE;
+            border-radius: 50%;
+            margin: 1vh 2vw;
+            padding: 3vh 2vw;
+        }
+        #QtIcon2{
+            color: #ef775f;
+            font-size: 2em;
+            background-color: #F1F3CE;
+            border-radius: 50%;
+            margin: 1vh 2vw;
+            padding: 3vh 1vw;
+        }
+        #QtIcon3{
+            color: #ef775f;
+            font-size: 2em;
+            background-color: #F1F3CE;
+            border-radius: 50%;
+            margin: 1vh 2vw;
+            padding: 3vh 1.5vw;
+        }
+    }
+        .QtSubContainer{
+            display: flex;
+            flex-direction: column;
+            .Qt{
+                font-size: 1.2em;
+                font-weight: 600;
+                color: #F1F3CE;
+                text-align: left;
+                margin-bottom: 0vh;
+                .fas fa-arrow-down{
+                    color:#F1F3CE;
+                    padding: 1vh 1vw;
+                }
+            }
+            .QtRta{
+                font-size: 1em;
+                color: #F1F3CE;
+                text-align: left;
+                width: 70%;
+            }
+        }
+    }
