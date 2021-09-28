@@ -32,6 +32,10 @@ body {
   background-color: rgba(255, 255, 255, 0.179);
 }
 
+.navbar-toggler-icon {
+  color: white;
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -203,6 +207,8 @@ footer .footerRedes div a #redes {
 .nuestrosSeguros {
   background-color: #002936;
   text-align: center;
+  border-bottom: 1px solid white;
+  padding-bottom: 6vh;
 }
 .nuestrosSeguros__titulo {
   padding-top: 20px;
@@ -506,6 +512,26 @@ footer .footerRedes div a #redes {
   color: white;
   font-size: 1em;
   margin-left: 1vw;
+}
+
+#accidentes {
+  background-image: url("../../imagenes/Seguros/segurosAccidentes-330x330.png");
+}
+
+#contratotrabajo {
+  background-image: url("../../imagenes/Seguros/seguroTrabajo-330x330.png");
+}
+
+#conveniomercantil {
+  background-image: url("../../imagenes/Seguros/segurosConvenioMercantil-330x330.png");
+}
+
+#vidatrabajadores {
+  background-image: url("../../imagenes/Seguros/segurosTrabajadores-330x330.png");
+}
+
+#corporativos {
+  background-image: url("../../imagenes/Seguros/segurosCorporativos-330x330.png");
 }
 
 /*# sourceMappingURL=style.css.map */
