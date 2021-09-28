@@ -1,2 +1,132 @@
 //Index
+@import "../utilities/colors";
 
+// Carrousel
+
+.carrousel {
+  &__img {
+    height: 30%;
+    width: 100%;
+  }
+  &__divP {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 0%;
+    background-color: #002936be;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__p {
+    position: relative;
+    width: 70%;
+    color: white;
+    font-size: 4.5em;
+    font-weight: bold;
+    margin: 10% 0 0 15%;
+  }
+
+  .btn {
+    width: 13%;
+    height: 5%;
+    margin: 5% 0 0 15%;
+    font-size: 1.2em;
+    color: white;
+    background-color: #f62a00;
+    border: none;
+  }
+}
+
+.divTelefono {
+  display: flex;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+
+  &__icon {
+    margin: 2%;
+    background-color: #f62a00;
+    height: 80%;
+    border-radius: 100%;
+    &__img {
+      padding: 30%;
+      height: 100%;
+    }
+  }
+  &__h3 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #002936;
+  }
+}
+
+.nuestrosSeguros {
+  background-color: #002936;
+  text-align: center;
+  &__titulo {
+    padding-top: 20px;
+    color: #fff;
+    font-size: 3em;
+    text-transform: uppercase;
+  }
+  &__card {
+    padding: 100px 20px 20px 20px;
+    margin-top: 20px;
+    transition: all ease-in-out 0.3s;
+    background-size: cover;
+    border-radius: 18px;
+    border-bottom: 3px solid #fff;
+
+    &__body {
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.514);
+      border-radius: 18px;
+      text-align: left;
+
+      &__p {
+        padding: 0%;
+      }
+      &__h4 {
+        font-weight: 700;
+        margin-bottom: 15px;
+        font-size: 24px;
+      }
+
+      .btn {
+        color: white;
+        background-color: #f62a00;
+        border: none;
+      }
+    }
+  }
+}
+
+.nuestrosSeguros__card:hover {
+  transform: translateY(-10px);
+  border-color: #f62a00;
+}
+
+#ahorroInversion {
+  background-image: url("../../imagenes/Seguros/segurosAhorro-330x330.png");
+}
+
+#vida {
+  background-image: url("../../imagenes/Seguros/segurosVida-330x330.png");
+}
+
+#automotor {
+  background-image: url("../../imagenes/Seguros/segurosAutomotor-330x330.png");
+}
+
+#bicicleta {
+  background-image: url("../../imagenes/Seguros/segurosBicicleta-330x330.png");
+}
+
+#hogar {
+  background-image: url("../../imagenes/Seguros/segurosHogar-330x330.png");
+}
+
+#pertenciasPersonales {
+  background-image: url("../../imagenes/Seguros/segurosMochila-330x330.png");
+}
