@@ -5,7 +5,7 @@
 
 .carrousel {
   &__img {
-    height: 30%;
+    height: 650px;
     width: 100%;
   }
   &__divP {
@@ -29,7 +29,7 @@
 
   .btn {
     width: 13%;
-    height: 5%;
+    height: 8%;
     margin: 5% 0 0 15%;
     font-size: 1.2em;
     color: white;
@@ -64,6 +64,17 @@
 .nuestrosSeguros {
   background-color: #002936;
   text-align: center;
+
+  .btn {
+    margin: 3%;
+    border: #f62a00 solid;
+  }
+
+  .btn:hover {
+    background-color: #f62a00;
+    border: #f62a00 solid;
+    color: #fff;
+  }
   &__titulo {
     padding-top: 20px;
     color: #fff;
@@ -129,4 +140,10 @@
 
 #pertenciasPersonales {
   background-image: url("../../imagenes/Seguros/segurosMochila-330x330.png");
+}
+
+.cpSeguros {
+  background-color: #fff;
+  height: 600px;
+  display: flex;
 }

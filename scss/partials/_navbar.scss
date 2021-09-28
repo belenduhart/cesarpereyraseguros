@@ -1,20 +1,25 @@
 //NavBar
 @import "../utilities/colors";
 
-#NavBarContainer {
-  background-color: #002936;
-  #navbarNav {
-    justify-content: right;
-    margin: 1vh 1vw;
-  }
-  .LogoNavBar {
-    width: 7vw;
-    padding: 1vh 1vw;
-  }
-  a {
-    color: #f1f3ce;
-    margin: 0vh 1vw;
-    font-weight: 500;
-    font-size: 1.1em;
-  }
+
+#NavBarContainer{
+    background-color: #002936;
+    #navbarNav{
+        justify-content: right;
+        margin: 1vh 1vw;
+    }
+    .LogoNavBar{
+        width: 7vw;
+        padding: 1vh 1vw;
+    }
+    a{
+        color: #F1F3CE;
+        margin: 0vh 1vw;
+        font-weight: 500;
+        font-size: 1.1em;
+        &:hover{
+            background-color: rgba(255, 255, 255, 0.179);
+        }
+    }
+
 }

@@ -8,7 +8,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   user-select: none;
   scroll-behavior: smooth;
-  background-color: #002936;
+  background-color: #F1F3CE;
 }
 
 #NavBarContainer {
@@ -26,10 +26,14 @@ body {
 }
 
 #NavBarContainer a {
-  color: #f1f3ce;
+  color: #F1F3CE;
   margin: 0vh 1vw;
   font-weight: 500;
   font-size: 1.1em;
+}
+
+#NavBarContainer a:hover {
+  background-color: rgba(255, 255, 255, 0.179);
 }
 
 footer {
@@ -39,7 +43,6 @@ footer {
   justify-content: center;
   width: 100%;
   background-color: #002936;
-  margin-top: 2vh;
 }
 
 footer .footerInfo {
@@ -51,7 +54,6 @@ footer .footerInfo {
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
-  border-top: 1px solid #F1F3CE;
   padding-top: 4vh;
 }
 
@@ -166,7 +168,7 @@ footer .footerRedes div a #redes {
 }
 
 .carrousel__img {
-  height: 30%;
+  height: 650px;
   width: 100%;
 }
 
@@ -191,7 +193,7 @@ footer .footerRedes div a #redes {
 
 .carrousel .btn {
   width: 13%;
-  height: 5%;
+  height: 8%;
   margin: 5% 0 0 15%;
   font-size: 1.2em;
   color: white;
@@ -227,6 +229,17 @@ footer .footerRedes div a #redes {
 .nuestrosSeguros {
   background-color: #002936;
   text-align: center;
+}
+
+.nuestrosSeguros .btn {
+  margin: 3%;
+  border: #f62a00 solid;
+}
+
+.nuestrosSeguros .btn:hover {
+  background-color: #f62a00;
+  border: #f62a00 solid;
+  color: #fff;
 }
 
 .nuestrosSeguros__titulo {
@@ -295,5 +308,290 @@ footer .footerRedes div a #redes {
 
 #pertenciasPersonales {
   background-image: url("../../imagenes/Seguros/segurosMochila-330x330.png");
+}
+
+.cpSeguros {
+  background-color: #fff;
+  height: 600px;
+  display: flex;
+}
+
+.nosotros1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  background-color: #F1F3CE;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 1vw;
+}
+
+@media only screen and (max-width: 480px) {
+  .nosotros1 {
+    flex-wrap: wrap;
+  }
+}
+
+.nosotros1 .nosotrosCesar img {
+  width: 80%;
+  margin: 0vh 30%;
+}
+
+@media only screen and (max-width: 800px) {
+  .nosotros1 .nosotrosCesar img {
+    margin: 0vh 10%;
+  }
+}
+
+.nosotros1 .contenedorTextosNosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  width: 50%;
+  padding: 1vh 4vw;
+}
+
+@media only screen and (max-width: 800px) {
+  .nosotros1 .contenedorTextosNosotros {
+    width: 100%;
+  }
+}
+
+.nosotros1 .contenedorTextosNosotros .CPSEGUROS {
+  font-size: 0.9em;
+  color: #F62A00;
+  text-align: left;
+  font-weight: bold;
+  padding: 1vh 1vw;
+}
+
+.nosotros1 .contenedorTextosNosotros .titulosNosotros {
+  padding: 1vh 1vw;
+}
+
+.nosotros1 .contenedorTextosNosotros .titulosNosotros .pNos1 {
+  font-size: 1.5em;
+  color: #002936;
+  font-weight: bold;
+  border-bottom: 1px solid #002936;
+  text-align: left;
+  width: 30%;
+}
+
+@media only screen and (max-width: 800px) {
+  .nosotros1 .contenedorTextosNosotros .titulosNosotros .pNos1 {
+    width: 50%;
+  }
+}
+
+.nosotros1 .contenedorTextosNosotros .titulosNosotros .pNos2 {
+  font-size: 1em;
+  color: #002936;
+  text-align: left;
+  font-weight: bold;
+  color: #002936;
+}
+
+.nosotros1 .contenedorTextosNosotros .descripcionNosotros {
+  color: #002936;
+  font-size: 1em;
+  text-align: left;
+  margin: 1vh 1vw;
+  width: 70%;
+}
+
+@media only screen and (max-width: 800px) {
+  .nosotros1 .contenedorTextosNosotros .descripcionNosotros {
+    width: 100%;
+  }
+}
+
+.nosotros2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.nosotros2 .imagenTextoBlog {
+  width: 100%;
+  position: relative;
+}
+
+.nosotros2 .imagenTextoBlog img {
+  width: 100%;
+}
+
+.nosotros2 .imagenTextoBlog div {
+  background-color: #F1F3CE;
+  padding: 5vh 2vw;
+  width: 30%;
+  position: absolute;
+  top: 67%;
+  right: 12%;
+}
+
+@media only screen and (min-width: 745px) and (max-width: 1080px) {
+  .nosotros2 .imagenTextoBlog div {
+    padding: 2vh 2vw;
+    width: 59%;
+    position: absolute;
+    top: 67%;
+    right: 0%;
+  }
+}
+
+@media only screen and (max-width: 745px) {
+  .nosotros2 .imagenTextoBlog div {
+    width: 100%;
+    position: relative;
+    padding: 3vh 2vw;
+    right: 0%;
+  }
+}
+
+.nosotros2 .imagenTextoBlog div .misionVision {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: left;
+  color: #002936;
+}
+
+.nosotros2 .imagenTextoBlog div .misionVision2 {
+  font-size: 1em;
+  text-align: left;
+  color: #002936;
+}
+
+.nosotros2 .imagenTextoBlog div .linkBlog {
+  font-size: 1em;
+  text-align: left;
+  font-weight: bold;
+  color: #F62A00;
+  text-decoration: none;
+}
+
+.nosotros2 .imagenTextoBlog div .linkBlog:hover {
+  color: #1E656D;
+}
+
+.nosotros2 .valores {
+  background-color: #F1F3CE;
+  display: flex;
+  flex-direction: column;
+  padding: 15vh 4vw;
+}
+
+@media only screen and (max-width: 745px) {
+  .nosotros2 .valores {
+    padding: 1vh 1vw;
+  }
+}
+
+.nosotros2 .valores .nuestrosValores {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #002936;
+  text-align: left;
+}
+
+.nosotros2 .valores .valoresContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 745px) {
+  .nosotros2 .valores .valoresContainer {
+    flex-wrap: wrap;
+  }
+}
+
+.nosotros2 .valores .valoresContainer .valorBox {
+  width: 15vw;
+  background-color: white;
+  box-shadow: 5px 5px 15px -6px #000000;
+  margin: 1vh 1vw;
+}
+
+@media only screen and (max-width: 745px) {
+  .nosotros2 .valores .valoresContainer .valorBox {
+    width: 40%;
+  }
+}
+
+.nosotros2 .valores .valoresContainer .valorBox .valor {
+  text-align: left;
+  font-weight: bold;
+  color: #002936;
+  font-size: 1em;
+  padding: 2vh 1vw;
+}
+
+.nosotros2 .valores .valoresContainer .valorBox i {
+  color: #F62A00;
+  font-size: 1.3em;
+  padding: 2vh 1vw;
+}
+
+.nosotros3 {
+  background-color: #1E656D;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.nosotros3 .tituloNosotros3 {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: 4vh 5%;
+}
+
+.nosotros3 .reviewsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: left;
+  margin: 1vh auto;
+}
+
+.nosotros3 .reviewsContainer .stars {
+  display: flex;
+  flex-direction: row;
+}
+
+.nosotros3 .reviewsContainer .stars i {
+  color: rgba(255, 255, 0, 0.761);
+  font-size: 1em;
+  padding: 2vh 1vw;
+}
+
+.nosotros3 .reviewsContainer .reviewsName {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.nosotros3 .reviewsContainer .reviewsName i {
+  color: white;
+  font-size: 1.1em;
+  padding: 0vh 1vw;
+}
+
+.nosotros3 .reviewsContainer .reviewsName p {
+  color: white;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.nosotros3 .reviewsContainer .review {
+  color: white;
+  font-size: 1em;
+  margin-left: 1vw;
 }
 /*# sourceMappingURL=style.css.map */
