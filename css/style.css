@@ -151,6 +151,11 @@ footer .footerRedes div a #redes {
   font-size: 0.8em;
 }
 
+@media only screen and (max-width: 480px) {
+  .carrousel {
+    height: 300px;
+  }
+}
 .carrousel__img {
   height: 650px;
   width: 100%;
@@ -163,6 +168,14 @@ footer .footerRedes div a #redes {
   background-color: #002936be;
   height: 100%;
   width: 100%;
+}
+@media only screen and (max-width: 480px) {
+  .carrousel__divP {
+    padding-top: 60px;
+    font-size: 6px;
+    display: block;
+    text-align: center;
+  }
 }
 .carrousel__p {
   position: relative;
@@ -181,6 +194,16 @@ footer .footerRedes div a #redes {
   background-color: #f62a00;
   border: none;
 }
+@media only screen and (max-width: 480px) {
+  .carrousel .btn {
+    width: 200px;
+    height: 30px;
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    font-size: 15px;
+  }
+}
 
 .divTelefono {
   display: flex;
@@ -188,11 +211,22 @@ footer .footerRedes div a #redes {
   justify-content: center;
   align-items: center;
 }
+@media only screen and (max-width: 480px) {
+  .divTelefono {
+    font-size: 10px;
+    height: 80px;
+  }
+}
 .divTelefono__icon {
   margin: 2%;
   background-color: #f62a00;
   height: 80%;
   border-radius: 100%;
+}
+@media only screen and (max-width: 480px) {
+  .divTelefono__icon {
+    height: 50px;
+  }
 }
 .divTelefono__icon__img {
   padding: 30%;
@@ -223,6 +257,11 @@ footer .footerRedes div a #redes {
   font-size: 3em;
   text-transform: uppercase;
 }
+@media only screen and (max-width: 480px) {
+  .nuestrosSeguros__titulo {
+    font-size: 25px;
+  }
+}
 .nuestrosSeguros__card {
   padding: 100px 20px 20px 20px;
   margin-top: 20px;
@@ -230,6 +269,12 @@ footer .footerRedes div a #redes {
   background-size: cover;
   border-radius: 18px;
   border-bottom: 3px solid #fff;
+}
+@media only screen and (max-width: 480px) {
+  .nuestrosSeguros__card {
+    padding: 0;
+    margin: 30px;
+  }
 }
 .nuestrosSeguros__card__body {
   padding: 20px;
@@ -290,23 +335,52 @@ footer .footerRedes div a #redes {
   height: 600px;
   display: flex;
 }
+@media only screen and (max-width: 480px) {
+  .cpSeguros {
+    display: block;
+    height: auto;
+  }
+}
 .cpSeguros__divImg {
   width: 55%;
   display: flex;
   justify-content: end;
   align-items: center;
 }
+@media only screen and (max-width: 480px) {
+  .cpSeguros__divImg {
+    width: 100%;
+  }
+}
 .cpSeguros__Img {
   height: 90%;
   width: auto;
 }
+@media only screen and (max-width: 480px) {
+  .cpSeguros__Img {
+    padding: 25px;
+    margin-top: 20px;
+    width: 400px;
+    text-align: center;
+  }
+}
 .cpSeguros__desc {
   width: 45%;
+}
+@media only screen and (max-width: 480px) {
+  .cpSeguros__desc {
+    width: 100%;
+  }
 }
 .cpSeguros__desc__h3 {
   color: #f62a00;
   margin: 25% 0 0 10%;
   font-size: 1em;
+}
+@media only screen and (max-width: 480px) {
+  .cpSeguros__desc__h3 {
+    display: none;
+  }
 }
 .cpSeguros__desc__h2 {
   color: #002936;
@@ -314,6 +388,13 @@ footer .footerRedes div a #redes {
   font-weight: bold;
   margin-left: 10%;
   width: 80%;
+}
+@media only screen and (max-width: 480px) {
+  .cpSeguros__desc {
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+  }
 }
 .cpSeguros__desc__p {
   color: #002936;
@@ -332,6 +413,125 @@ footer .footerRedes div a #redes {
   margin-left: 6%;
   color: red;
   font-weight: bold;
+}
+
+.QtcontainerCenter {
+  display: flex;
+  margin-left: 30px;
+}
+@media only screen and (max-width: 480px) {
+  .QtcontainerCenter {
+    display: block;
+    margin: 2px;
+  }
+}
+
+.QtcontainerLeft {
+  padding: 0;
+}
+
+.FqTitulo {
+  font-size: 2.5em;
+  color: #f1f3ce;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 9vw;
+  padding-top: 7vh;
+}
+@media only screen and (max-width: 480px) {
+  .FqTitulo {
+    font-size: 1px;
+  }
+}
+
+.QtContainerIndex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 2vh;
+}
+@media only screen and (max-width: 480px) {
+  .QtContainerIndex {
+    margin-top: 10px;
+    justify-content: center;
+  }
+}
+.QtContainerIndex #QtIcon1 {
+  color: #ef775f;
+  font-size: 2em;
+  background-color: #f1f3ce;
+  border-radius: 50%;
+  margin: 1vh 2vw;
+  padding: 3vh 2vw;
+}
+@media only screen and (max-width: 480px) {
+  .QtContainerIndex #QtIcon1 {
+    display: none;
+  }
+}
+.QtContainerIndex #QtIcon2 {
+  color: #ef775f;
+  font-size: 2em;
+  background-color: #f1f3ce;
+  border-radius: 50%;
+  margin: 1vh 2vw;
+  padding: 3vh 1vw;
+}
+@media only screen and (max-width: 480px) {
+  .QtContainerIndex #QtIcon2 {
+    display: none;
+  }
+}
+.QtContainerIndex #QtIcon3 {
+  color: #ef775f;
+  font-size: 2em;
+  background-color: #f1f3ce;
+  border-radius: 50%;
+  margin: 1vh 2vw;
+  padding: 3vh 1.5vw;
+}
+@media only screen and (max-width: 480px) {
+  .QtContainerIndex #QtIcon3 {
+    display: none;
+  }
+}
+
+.QtSubContainer {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (max-width: 480px) {
+  .QtSubContainer {
+    align-items: center;
+  }
+}
+.QtSubContainer .Qt {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #f1f3ce;
+  text-align: left;
+  margin-bottom: 0vh;
+}
+@media only screen and (max-width: 480px) {
+  .QtSubContainer .Qt {
+    font-size: 1em;
+  }
+}
+.QtSubContainer .Qt .fas fa-arrow-down {
+  color: #f1f3ce;
+  padding: 1vh 1vw;
+}
+.QtSubContainer .QtRta {
+  font-size: 1em;
+  color: #f1f3ce;
+  text-align: left;
+  width: 70%;
+}
+@media only screen and (max-width: 480px) {
+  .QtSubContainer .QtRta {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .nosotros1 {
@@ -599,12 +799,12 @@ footer .footerRedes div a #redes {
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #1E656D;
+  background-color: #1e656d;
   padding-bottom: 8vh;
 }
 #FqContainer .FqTitulo {
   font-size: 2.5em;
-  color: #F1F3CE;
+  color: #f1f3ce;
   font-weight: bold;
   text-align: left;
   padding-left: 9vw;
@@ -620,7 +820,7 @@ footer .footerRedes div a #redes {
 #FqContainer .QtContainer #QtIcon1 {
   color: #ef775f;
   font-size: 2em;
-  background-color: #F1F3CE;
+  background-color: #f1f3ce;
   border-radius: 50%;
   margin: 1vh 2vw;
   padding: 3vh 2vw;
@@ -628,7 +828,7 @@ footer .footerRedes div a #redes {
 #FqContainer .QtContainer #QtIcon2 {
   color: #ef775f;
   font-size: 2em;
-  background-color: #F1F3CE;
+  background-color: #f1f3ce;
   border-radius: 50%;
   margin: 1vh 2vw;
   padding: 3vh 1vw;
@@ -636,7 +836,7 @@ footer .footerRedes div a #redes {
 #FqContainer .QtContainer #QtIcon3 {
   color: #ef775f;
   font-size: 2em;
-  background-color: #F1F3CE;
+  background-color: #f1f3ce;
   border-radius: 50%;
   margin: 1vh 2vw;
   padding: 3vh 1.5vw;
@@ -648,17 +848,17 @@ footer .footerRedes div a #redes {
 #FqContainer .QtSubContainer .Qt {
   font-size: 1.2em;
   font-weight: 600;
-  color: #F1F3CE;
+  color: #f1f3ce;
   text-align: left;
   margin-bottom: 0vh;
 }
 #FqContainer .QtSubContainer .Qt .fas fa-arrow-down {
-  color: #F1F3CE;
+  color: #f1f3ce;
   padding: 1vh 1vw;
 }
 #FqContainer .QtSubContainer .QtRta {
   font-size: 1em;
-  color: #F1F3CE;
+  color: #f1f3ce;
   text-align: left;
   width: 70%;
 }
