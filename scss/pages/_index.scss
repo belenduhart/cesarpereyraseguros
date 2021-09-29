@@ -4,8 +4,11 @@
 // Carrousel
 
 .carrousel {
+  @media only screen and (max-width: 480px) {
+    height: 300px;
+  }
   &__img {
-    height: 30%;
+    height: 650px;
     width: 100%;
   }
   &__divP {
@@ -16,6 +19,12 @@
     background-color: #002936be;
     height: 100%;
     width: 100%;
+    @media only screen and (max-width: 480px) {
+      padding-top: 60px;
+      font-size: 6px;
+      display: block;
+      text-align: center;
+    }
   }
 
   &__p {
@@ -29,26 +38,42 @@
 
   .btn {
     width: 13%;
-    height: 5%;
+    height: 8%;
     margin: 5% 0 0 15%;
     font-size: 1.2em;
     color: white;
     background-color: #f62a00;
     border: none;
+    @media only screen and (max-width: 480px) {
+      width: 200px;
+      height: 30px;
+      margin: 0;
+      margin-top: 20px;
+      padding: 0;
+      font-size: 15px;
+    }
   }
 }
 
+// ---- Seccion Telefono ----
 .divTelefono {
   display: flex;
   height: 150px;
   justify-content: center;
   align-items: center;
+  @media only screen and (max-width: 480px) {
+    font-size: 10px;
+    height: 80px;
+  }
 
   &__icon {
     margin: 2%;
     background-color: #f62a00;
     height: 80%;
     border-radius: 100%;
+    @media only screen and (max-width: 480px) {
+      height: 50px;
+    }
     &__img {
       padding: 30%;
       height: 100%;
@@ -61,16 +86,29 @@
   }
 }
 
+// ---- Seccion Nuestros Segugos ----
 .nuestrosSeguros {
   background-color: #002936;
   text-align: center;
-  border-bottom: 1px solid white;
-  padding-bottom: 6vh;
+
+  .btn {
+    margin: 3%;
+    border: #f62a00 solid;
+  }
+
+  .btn:hover {
+    background-color: #f62a00;
+    border: #f62a00 solid;
+    color: #fff;
+  }
   &__titulo {
     padding-top: 20px;
     color: #fff;
     font-size: 3em;
     text-transform: uppercase;
+    @media only screen and (max-width: 480px) {
+      font-size: 25px;
+    }
   }
   &__card {
     padding: 100px 20px 20px 20px;
@@ -79,6 +117,10 @@
     background-size: cover;
     border-radius: 18px;
     border-bottom: 3px solid #fff;
+    @media only screen and (max-width: 480px) {
+      padding: 0;
+      margin: 30px;
+    }
 
     &__body {
       padding: 20px;
@@ -96,6 +138,12 @@
       }
 
       .btn {
+        color: white;
+        background-color: #f62a00;
+        border: none;
+      }
+
+      .btn:hover {
         color: white;
         background-color: #f62a00;
         border: none;
@@ -131,4 +179,184 @@
 
 #pertenciasPersonales {
   background-image: url("../../imagenes/Seguros/segurosMochila-330x330.png");
+}
+
+// ---- Seccion CPSeguros ----
+.cpSeguros {
+  background-color: #fff;
+  height: 600px;
+  display: flex;
+
+  @media only screen and (max-width: 480px) {
+    display: block;
+    height: auto;
+  }
+  &__divImg {
+    width: 55%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    @media only screen and (max-width: 480px) {
+      width: 100%;
+    }
+  }
+
+  &__Img {
+    height: 90%;
+    width: auto;
+    @media only screen and (max-width: 480px) {
+      padding: 25px;
+      margin-top: 20px;
+      width: 400px;
+      text-align: center;
+    }
+  }
+  &__desc {
+    width: 45%;
+    @media only screen and (max-width: 480px) {
+      width: 100%;
+    }
+    &__h3 {
+      color: #f62a00;
+      margin: 25% 0 0 10%;
+      font-size: 1em;
+      @media only screen and (max-width: 480px) {
+        display: none;
+      }
+    }
+    &__h2 {
+      color: #002936;
+      font-size: 2.5em;
+      font-weight: bold;
+      margin-left: 10%;
+      width: 80%;
+    }
+    @media only screen and (max-width: 480px) {
+      font-size: 14px;
+      width: 100%;
+      text-align: center;
+    }
+
+    &__p {
+      color: #002936;
+      font-size: 1.2em;
+      margin: 5% 10%;
+      width: 80%;
+    }
+    .flecha {
+      width: 15%;
+      height: 25px;
+      color: red;
+    }
+    .btn {
+      width: 200px;
+      font-size: 1.2em;
+      margin-left: 6%;
+      color: red;
+      font-weight: bold;
+    }
+  }
+}
+
+// ---- Seccion Preguntas Frecuentes ----
+
+.QtcontainerCenter {
+  display: flex;
+  margin-left: 30px;
+
+  @media only screen and (max-width: 480px) {
+    display: block;
+    margin: 2px;
+  }
+}
+
+.QtcontainerLeft {
+  padding: 0;
+}
+
+.FqTitulo {
+  font-size: 2.5em;
+  color: #f1f3ce;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 9vw;
+  padding-top: 7vh;
+  @media only screen and (max-width: 480px) {
+    font-size: 1px;
+  }
+}
+.QtContainerIndex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 2vh;
+  @media only screen and (max-width: 480px) {
+    margin-top: 10px;
+    justify-content: center;
+  }
+  #QtIcon1 {
+    color: #ef775f;
+    font-size: 2em;
+    background-color: #f1f3ce;
+    border-radius: 50%;
+    margin: 1vh 2vw;
+    padding: 3vh 2vw;
+    @media only screen and (max-width: 480px) {
+      display: none;
+    }
+  }
+  #QtIcon2 {
+    color: #ef775f;
+    font-size: 2em;
+    background-color: #f1f3ce;
+    border-radius: 50%;
+    margin: 1vh 2vw;
+    padding: 3vh 1vw;
+    @media only screen and (max-width: 480px) {
+      display: none;
+    }
+  }
+  #QtIcon3 {
+    color: #ef775f;
+    font-size: 2em;
+    background-color: #f1f3ce;
+    border-radius: 50%;
+    margin: 1vh 2vw;
+    padding: 3vh 1.5vw;
+    @media only screen and (max-width: 480px) {
+      display: none;
+    }
+  }
+}
+.QtSubContainer {
+  display: flex;
+  flex-direction: column;
+  @media only screen and (max-width: 480px) {
+    align-items: center;
+  }
+  .Qt {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #f1f3ce;
+    text-align: left;
+    margin-bottom: 0vh;
+    @media only screen and (max-width: 480px) {
+      font-size: 1em;
+    }
+    .fas fa-arrow-down {
+      color: #f1f3ce;
+      padding: 1vh 1vw;
+    }
+  }
+  .QtRta {
+    font-size: 1em;
+    color: #f1f3ce;
+    text-align: left;
+    width: 70%;
+    @media only screen and (max-width: 480px) {
+      width: 100%;
+      text-align: center;
+    }
+  }
 }

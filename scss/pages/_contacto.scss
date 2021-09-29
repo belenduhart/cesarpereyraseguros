@@ -1,0 +1,58 @@
+//Contacto
+.ContactoForm{
+    background-image: url(../../imagenes/contactoBackG.png);
+    background-size: cover;
+    padding: 7vh 0vw;
+    .Contacto{
+        color: white;
+        font-weight: bold;
+        font-size: 2em;
+        padding: 2vh 2vw;
+        text-align: center;
+    }
+    .Formulario{
+        width: 40%;
+        margin: 2vh auto;
+        background-color: #002936bd;
+        padding: 3vh 3vw;
+        border-radius: 10px;
+        .inputForm{
+            display: flex;
+            flex-direction: row;
+            label{
+                padding: 1vh 1vw;
+                color: white;
+                font-weight: bold;
+        }
+        input{
+            margin: 1vh 1vw;
+        }
+    }
+    .texto{
+        color: white;
+        font-weight: bold;
+    }
+    textarea{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        height: 165px;
+    }
+    .divBoton{
+        margin:1vh auto;
+        .botonEnviar{
+            margin: 2vh auto;
+            padding: 1vh 5vw;
+            border-radius: 10px;
+            background-color: #F62A00;
+            color: white;
+            font-weight: bold;
+            &:hover{
+                background-color: #d16d59 ;
+                transform: scale(0.98);
+            }
+        }
+    }
+}
+}
+
+
