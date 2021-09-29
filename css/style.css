@@ -281,7 +281,7 @@ footer .footerRedes div a #redes {
   background-color: #F1F3CE;
   justify-content: center;
   align-items: center;
-  padding: 5% 1vw;
+  padding: 7% 1vw;
 }
 @media only screen and (max-width: 480px) {
   .nosotros1 {
@@ -600,6 +600,62 @@ footer .footerRedes div a #redes {
   color: #F1F3CE;
   text-align: left;
   width: 70%;
+}
+
+.ContactoForm {
+  background-image: url(../../imagenes/contactoBackG.png);
+  background-size: cover;
+  padding: 7vh 0vw;
+}
+.ContactoForm .Contacto {
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  padding: 2vh 2vw;
+  text-align: center;
+}
+.ContactoForm .Formulario {
+  width: 40%;
+  margin: 2vh auto;
+  background-color: #002936bd;
+  padding: 3vh 3vw;
+  border-radius: 10px;
+}
+.ContactoForm .Formulario .inputForm {
+  display: flex;
+  flex-direction: row;
+}
+.ContactoForm .Formulario .inputForm label {
+  padding: 1vh 1vw;
+  color: white;
+  font-weight: bold;
+}
+.ContactoForm .Formulario .inputForm input {
+  margin: 1vh 1vw;
+}
+.ContactoForm .Formulario .texto {
+  color: white;
+  font-weight: bold;
+}
+.ContactoForm .Formulario textarea {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 165px;
+}
+.ContactoForm .Formulario .divBoton {
+  margin: 1vh auto;
+}
+.ContactoForm .Formulario .divBoton .botonEnviar {
+  margin: 2vh auto;
+  padding: 1vh 5vw;
+  border-radius: 10px;
+  background-color: #F62A00;
+  color: white;
+  font-weight: bold;
+}
+.ContactoForm .Formulario .divBoton .botonEnviar:hover {
+  background-color: #d16d59;
+  transform: scale(0.98);
 }
 
 /*# sourceMappingURL=style.css.map */
