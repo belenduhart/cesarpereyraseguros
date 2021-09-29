@@ -152,7 +152,7 @@ footer .footerRedes div a #redes {
 }
 
 .carrousel__img {
-  height: 30%;
+  height: 650px;
   width: 100%;
 }
 .carrousel__divP {
@@ -174,7 +174,7 @@ footer .footerRedes div a #redes {
 }
 .carrousel .btn {
   width: 13%;
-  height: 5%;
+  height: 8%;
   margin: 5% 0 0 15%;
   font-size: 1.2em;
   color: white;
@@ -207,8 +207,15 @@ footer .footerRedes div a #redes {
 .nuestrosSeguros {
   background-color: #002936;
   text-align: center;
-  border-bottom: 1px solid white;
-  padding-bottom: 6vh;
+}
+.nuestrosSeguros .btn {
+  margin: 3%;
+  border: #f62a00 solid;
+}
+.nuestrosSeguros .btn:hover {
+  background-color: #f62a00;
+  border: #f62a00 solid;
+  color: #fff;
 }
 .nuestrosSeguros__titulo {
   padding-top: 20px;
@@ -243,6 +250,11 @@ footer .footerRedes div a #redes {
   background-color: #f62a00;
   border: none;
 }
+.nuestrosSeguros__card__body .btn:hover {
+  color: white;
+  background-color: #f62a00;
+  border: none;
+}
 
 .nuestrosSeguros__card:hover {
   transform: translateY(-10px);
@@ -271,6 +283,55 @@ footer .footerRedes div a #redes {
 
 #pertenciasPersonales {
   background-image: url("../../imagenes/Seguros/segurosMochila-330x330.png");
+}
+
+.cpSeguros {
+  background-color: #fff;
+  height: 600px;
+  display: flex;
+}
+.cpSeguros__divImg {
+  width: 55%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.cpSeguros__Img {
+  height: 90%;
+  width: auto;
+}
+.cpSeguros__desc {
+  width: 45%;
+}
+.cpSeguros__desc__h3 {
+  color: #f62a00;
+  margin: 25% 0 0 10%;
+  font-size: 1em;
+}
+.cpSeguros__desc__h2 {
+  color: #002936;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-left: 10%;
+  width: 80%;
+}
+.cpSeguros__desc__p {
+  color: #002936;
+  font-size: 1.2em;
+  margin: 5% 10%;
+  width: 80%;
+}
+.cpSeguros__desc .flecha {
+  width: 15%;
+  height: 25px;
+  color: red;
+}
+.cpSeguros__desc .btn {
+  width: 200px;
+  font-size: 1.2em;
+  margin-left: 6%;
+  color: red;
+  font-weight: bold;
 }
 
 .nosotros1 {
