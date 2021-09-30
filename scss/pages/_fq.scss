@@ -12,6 +12,9 @@
     text-align: left;
     padding-left: 9vw;
     padding-top: 7vh;
+    @media only screen and(max-width:500px) {
+      text-align: center;
+    }
   }
   .QtContainer {
     display: flex;
@@ -19,6 +22,9 @@
     padding: 1vh 9vw;
     align-items: center;
     margin-top: 2vh;
+    @media only screen and(max-width:800px) {
+      flex-direction: column;
+    }
     #QtIcon1 {
       color: #ef775f;
       font-size: 2em;
@@ -26,6 +32,9 @@
       border-radius: 50%;
       margin: 1vh 2vw;
       padding: 3vh 2vw;
+      @media only screen and(max-width:500px) {
+        background-color: transparent;
+      }
     }
     #QtIcon2 {
       color: #ef775f;
@@ -34,6 +43,9 @@
       border-radius: 50%;
       margin: 1vh 2vw;
       padding: 3vh 1vw;
+      @media only screen and(max-width:500px) {
+        background-color: transparent;
+      }
     }
     #QtIcon3 {
       color: #ef775f;
@@ -42,6 +54,9 @@
       border-radius: 50%;
       margin: 1vh 2vw;
       padding: 3vh 1.5vw;
+      @media only screen and(max-width:500px) {
+        background-color: transparent;
+      }
     }
   }
   .QtSubContainer {
@@ -53,6 +68,9 @@
       color: #f1f3ce;
       text-align: left;
       margin-bottom: 0vh;
+      @media only screen and(max-width:800px) {
+        text-align: center;
+      }
       .fas fa-arrow-down {
         color: #f1f3ce;
         padding: 1vh 1vw;
@@ -63,6 +81,10 @@
       color: #f1f3ce;
       text-align: left;
       width: 70%;
+      @media only screen and(max-width:800px) {
+        text-align: center;
+        width: 100%;
+      }
     }
   }
 }

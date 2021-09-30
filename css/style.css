@@ -10,6 +10,10 @@ body {
   scroll-behavior: smooth;
   background-color: #F1F3CE;
 }
+body a {
+  text-decoration: none;
+  color: white;
+}
 
 #NavBarContainer {
   background-color: #002936;
@@ -68,12 +72,26 @@ footer .footerInfo .footerAcerca .ulAcerca {
   color: #F1F3CE;
   font-size: 1em;
 }
+@media only screen and (max-width: 700px) {
+  footer .footerInfo .footerAcerca .ulAcerca {
+    flex-direction: row;
+  }
+}
+footer .footerInfo .footerAcerca .ulAcerca a {
+  text-decoration: none;
+  color: white;
+}
 footer .footerInfo .footerAcerca .ulAcerca li {
   color: #F1F3CE;
   text-align: center;
   list-style: none;
   font-weight: normal;
   font-size: 0.8em;
+}
+@media only screen and (max-width: 700px) {
+  footer .footerInfo .footerAcerca .ulAcerca li {
+    display: none;
+  }
 }
 footer .footerInfo .footerAcerca .ulAcerca li a {
   text-decoration: none;
@@ -85,6 +103,11 @@ footer .footerInfo .footerSeguros {
   align-items: center;
   justify-content: center;
   margin: 0vh auto;
+}
+@media only screen and (max-width: 700px) {
+  footer .footerInfo .footerSeguros {
+    display: none;
+  }
 }
 footer .footerInfo .footerSeguros p {
   color: #F1F3CE;
@@ -149,6 +172,11 @@ footer .footerRedes div a #redes {
   padding: 2vh 1vw;
   margin: 1vh 1vw;
   font-size: 0.8em;
+}
+@media only screen and (max-width: 700px) {
+  footer .footerRedes div a #redes {
+    background-color: transparent;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -631,19 +659,19 @@ footer .footerRedes div a #redes {
   padding: 5vh 2vw;
   width: 30%;
   position: absolute;
-  top: 67%;
+  top: 38%;
   right: 12%;
 }
-@media only screen and (min-width: 745px) and (max-width: 1080px) {
+@media only screen and (min-width: 887px) and (max-width: 1233px) {
   .nosotros2 .imagenTextoBlog div {
     padding: 2vh 2vw;
-    width: 59%;
+    width: 48%;
     position: absolute;
-    top: 67%;
+    top: 38%;
     right: 0%;
   }
 }
-@media only screen and (max-width: 745px) {
+@media only screen and (max-width: 887px) {
   .nosotros2 .imagenTextoBlog div {
     width: 100%;
     position: relative;
@@ -678,7 +706,7 @@ footer .footerRedes div a #redes {
   flex-direction: column;
   padding: 15vh 4vw;
 }
-@media only screen and (max-width: 745px) {
+@media only screen and (max-width: 887px) {
   .nosotros2 .valores {
     padding: 1vh 1vw;
   }
@@ -730,49 +758,92 @@ footer .footerRedes div a #redes {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: center;
 }
 .nosotros3 .tituloNosotros3 {
   color: white;
   font-weight: bold;
   font-size: 1.5em;
   margin: 4vh 5%;
+  text-align: center;
 }
-.nosotros3 .reviewsContainer {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  align-items: left;
-  margin: 1vh auto;
+.nosotros3 .tituloNosotros4 {
+  text-align: center;
+  color: white;
+  font-size: 1em;
 }
-.nosotros3 .reviewsContainer .stars {
+.nosotros3 .align {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 100px;
+  padding-top: 40px;
+  align-items: center;
 }
-.nosotros3 .reviewsContainer .stars i {
-  color: rgba(255, 255, 0, 0.761);
+@media only screen and (max-width: 840px) {
+  .nosotros3 .align {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+}
+.nosotros3 .align .reviewsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 364px;
+  padding: 0 2vw;
+  height: 41vh;
+  margin: 3vh 3vw;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: -1px 9px 50px -15px #ffffff;
+}
+@media only screen and (max-width: 840px) {
+  .nosotros3 .align .reviewsContainer {
+    width: 80%;
+  }
+}
+.nosotros3 .align .reviewsContainer .stars {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: white;
+  border-radius: 10px;
+  padding: 1vh 3vw;
+  justify-content: space-evenly;
+}
+.nosotros3 .align .reviewsContainer .stars p {
+  color: black;
+  font-weight: bold;
+  font-size: 1.2em;
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+.nosotros3 .align .reviewsContainer .stars i {
+  color: #F62A00;
   font-size: 1em;
   padding: 2vh 1vw;
 }
-.nosotros3 .reviewsContainer .reviewsName {
+.nosotros3 .align .reviewsContainer .reviewsName {
   display: flex;
   flex-direction: row;
   align-items: baseline;
 }
-.nosotros3 .reviewsContainer .reviewsName i {
-  color: white;
+.nosotros3 .align .reviewsContainer .reviewsName i {
+  color: #F62A00;
   font-size: 1.1em;
   padding: 0vh 1vw;
 }
-.nosotros3 .reviewsContainer .reviewsName p {
-  color: white;
+.nosotros3 .align .reviewsContainer .reviewsName p {
+  color: black;
   font-weight: bold;
   font-size: 1.1em;
 }
-.nosotros3 .reviewsContainer .review {
-  color: white;
+.nosotros3 .align .reviewsContainer .review {
+  color: black;
   font-size: 1em;
   margin-left: 1vw;
+  text-align: left;
 }
 
 #accidentes {
@@ -810,12 +881,22 @@ footer .footerRedes div a #redes {
   padding-left: 9vw;
   padding-top: 7vh;
 }
+@media only screen and (max-width: 500px) {
+  #FqContainer .FqTitulo {
+    text-align: center;
+  }
+}
 #FqContainer .QtContainer {
   display: flex;
   flex-direction: row;
   padding: 1vh 9vw;
   align-items: center;
   margin-top: 2vh;
+}
+@media only screen and (max-width: 800px) {
+  #FqContainer .QtContainer {
+    flex-direction: column;
+  }
 }
 #FqContainer .QtContainer #QtIcon1 {
   color: #ef775f;
@@ -825,6 +906,11 @@ footer .footerRedes div a #redes {
   margin: 1vh 2vw;
   padding: 3vh 2vw;
 }
+@media only screen and (max-width: 500px) {
+  #FqContainer .QtContainer #QtIcon1 {
+    background-color: transparent;
+  }
+}
 #FqContainer .QtContainer #QtIcon2 {
   color: #ef775f;
   font-size: 2em;
@@ -833,6 +919,11 @@ footer .footerRedes div a #redes {
   margin: 1vh 2vw;
   padding: 3vh 1vw;
 }
+@media only screen and (max-width: 500px) {
+  #FqContainer .QtContainer #QtIcon2 {
+    background-color: transparent;
+  }
+}
 #FqContainer .QtContainer #QtIcon3 {
   color: #ef775f;
   font-size: 2em;
@@ -840,6 +931,11 @@ footer .footerRedes div a #redes {
   border-radius: 50%;
   margin: 1vh 2vw;
   padding: 3vh 1.5vw;
+}
+@media only screen and (max-width: 500px) {
+  #FqContainer .QtContainer #QtIcon3 {
+    background-color: transparent;
+  }
 }
 #FqContainer .QtSubContainer {
   display: flex;
@@ -852,6 +948,11 @@ footer .footerRedes div a #redes {
   text-align: left;
   margin-bottom: 0vh;
 }
+@media only screen and (max-width: 800px) {
+  #FqContainer .QtSubContainer .Qt {
+    text-align: center;
+  }
+}
 #FqContainer .QtSubContainer .Qt .fas fa-arrow-down {
   color: #f1f3ce;
   padding: 1vh 1vw;
@@ -861,6 +962,12 @@ footer .footerRedes div a #redes {
   color: #f1f3ce;
   text-align: left;
   width: 70%;
+}
+@media only screen and (max-width: 800px) {
+  #FqContainer .QtSubContainer .QtRta {
+    text-align: center;
+    width: 100%;
+  }
 }
 
 .ContactoForm {
@@ -881,6 +988,11 @@ footer .footerRedes div a #redes {
   background-color: #002936bd;
   padding: 3vh 3vw;
   border-radius: 10px;
+}
+@media only screen and (max-width: 900px) {
+  .ContactoForm .Formulario {
+    width: 80%;
+  }
 }
 .ContactoForm .Formulario .inputForm {
   display: flex;
@@ -917,6 +1029,122 @@ footer .footerRedes div a #redes {
 .ContactoForm .Formulario .divBoton .botonEnviar:hover {
   background-color: #d16d59;
   transform: scale(0.98);
+}
+
+.buscanosSection {
+  width: 100%;
+  background-color: #F1F3CE;
+  padding-top: 220px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 707px) {
+  .buscanosSection {
+    padding-top: 2vh;
+    height: 61vh;
+  }
+}
+.buscanosSection .buscanosContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #F62A00;
+  border-radius: 10px;
+  width: 925px;
+  padding: 50px 30px;
+  height: 285px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 707px) {
+  .buscanosSection .buscanosContainer {
+    height: 70%;
+  }
+}
+.buscanosSection .buscanosContainer .buscanosTitulo {
+  font-size: 2em;
+  font-weight: bold;
+  color: #F1F3CE;
+  text-align: left;
+  width: 45%;
+}
+@media screen and (max-width: 707px) {
+  .buscanosSection .buscanosContainer .buscanosTitulo {
+    width: 100%;
+  }
+}
+.buscanosSection .buscanosContainer .buscanosTxt {
+  color: #F1F3CE;
+  font-size: 1em;
+  text-align: left;
+  width: 45%;
+}
+@media only screen and (max-width: 707px) {
+  .buscanosSection .buscanosContainer .buscanosTxt {
+    width: 100%;
+  }
+}
+.buscanosSection .iphoneDiv {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left: 50%;
+  bottom: 426px;
+}
+@media only screen and (max-width: 707px) {
+  .buscanosSection .iphoneDiv {
+    bottom: 76px;
+    left: 0vw;
+    margin: 0vh;
+  }
+}
+.buscanosSection .iphoneDiv .iphoneImg {
+  width: 304px;
+  height: 500px;
+  position: relative;
+  right: 220px;
+}
+@media screen and (max-width: 707px) {
+  .buscanosSection .iphoneDiv .iphoneImg {
+    display: none;
+  }
+}
+.buscanosSection .iphoneDiv .IphoneIcons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px 10px;
+  z-index: 1;
+  position: relative;
+  top: 0vh;
+  left: 59px;
+  width: 256px;
+}
+@media screen and (max-width: 707px) {
+  .buscanosSection .iphoneDiv .IphoneIcons {
+    width: 100%;
+    left: 0;
+    margin: 0 auto;
+    top: 63px;
+  }
+}
+.buscanosSection .iphoneDiv .IphoneIcons .iconDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1vh 1vw;
+}
+.buscanosSection .iphoneDiv .IphoneIcons .iconDiv:hover {
+  transform: scale(0.92);
+}
+.buscanosSection .iphoneDiv .IphoneIcons .iconDiv .iIconText {
+  text-align: center;
+  font-weight: bold;
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
