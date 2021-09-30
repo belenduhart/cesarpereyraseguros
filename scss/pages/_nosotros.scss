@@ -89,16 +89,16 @@
             padding: 5vh 2vw;
             width: 30%;
             position: absolute;
-            top: 67%;
+            top: 38%;
             right: 12%;
-            @media only screen and (min-width:745px) and (max-width:1080px){
+            @media only screen and (min-width:887px) and (max-width:1233px){
                 padding: 2vh 2vw;
-                width: 59%;
+                width: 48%;
                 position: absolute;
-                top: 67%;
+                top: 38%;
                 right: 0%;
             }
-            @media only screen and (max-width:745px){
+            @media only screen and (max-width:887px){
                 width: 100%;
                 position: relative;
                 padding: 3vh 2vw;
@@ -132,7 +132,7 @@
         display: flex;
         flex-direction: column;
         padding: 15vh 4vw;
-        @media only screen and (max-width:745px){
+        @media only screen and (max-width:887px){
             padding: 1vh 1vw;
         }
         .nuestrosValores{
@@ -181,48 +181,89 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: center;
     .tituloNosotros3{
         color: white;
         font-weight: bold;
         font-size: 1.5em;
         margin: 4vh 5%;
-
+        text-align: center;
     }
-    .reviewsContainer{
+    .tituloNosotros4{
+        text-align: center;
+        color: white;
+        font-size: 1em;
+    }
+    .align{
         display: flex;
-        flex-direction: column;
-        width: 50%;
-        align-items: left;
-        margin: 1vh auto;
-        .stars{
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-bottom: 100px;
+        padding-top:40px;
+        align-items: center;
+        @media only screen and (max-width:840px){
+            width: 100%;
+            justify-content: space-evenly;
+        }
+        .reviewsContainer{
             display: flex;
-            flex-direction: row;
-            i{
-                color:rgba(255, 255, 0, 0.761);
+            flex-direction: column;
+            width: 364px;
+            padding: 0 2vw;
+            height: 41vh;
+            margin: 3vh 3vw;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: -1px 9px 50px -15px #ffffff;
+            @media only screen and (max-width:840px){
+                width: 80%;
+            }
+            .stars{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                background-color: white;
+                border-radius: 10px;
+                padding: 1vh 3vw;
+                justify-content: space-evenly;
+                p{
+                    color: black;
+                    font-weight: bold;
+                    font-size: 1.2em;
+                    display: block;
+                    text-align: center;
+                    width: 100%;
+                }
+                i{
+                    color:#F62A00;
+                    font-size: 1em;
+                    padding:2vh 1vw;
+                }
+            }
+            .reviewsName{
+                display: flex;
+                flex-direction: row;
+                align-items: baseline;
+                i{
+                    color:#F62A00;;
+                    font-size: 1.1em;
+                    padding: 0vh 1vw;
+                }
+                p{
+                    color:black;
+                    font-weight: bold;
+                    font-size: 1.1em;
+                    // margin: 0 auto;
+                }
+            }
+            .review{
+                color:black;
                 font-size: 1em;
-                padding:2vh 1vw;
+                margin-left: 1vw;
+                text-align: left;
             }
-        }
-        .reviewsName{
-            display: flex;
-            flex-direction: row;
-            align-items: baseline;
-            i{
-                color:white;
-                font-size: 1.1em;
-                padding: 0vh 1vw;
-            }
-            p{
-                color:white;
-                font-weight: bold;
-                font-size: 1.1em;
-            }
-        }
-        .review{
-            color:white;
-            font-size: 1em;
-            margin-left: 1vw;
         }
     }
 }
+
+//Reviews
