@@ -371,27 +371,23 @@ footer .footerRedes div a #redes {
 }
 
 #ahorroInversion {
-  background-image: url("../../imagenes/Seguros/segurosAhorro-330x330.png");
+  background-image: url("https://i.ibb.co/Pwz6pL8/seguros-Ahorro-330x330.png");
 }
 
 #vida {
-  background-image: url("../../imagenes/Seguros/segurosVida-330x330.png");
+  background-image: url("https://i.ibb.co/L0YZZ3k/seguros-Vida-330x330.png");
 }
 
 #automotor {
-  background-image: url("../../imagenes/Seguros/segurosAutomotor-330x330.png");
+  background-image: url("https://i.ibb.co/qjf5FgH/seguros-Automotor-330x330.png");
 }
 
 #bicicleta {
-  background-image: url("../../imagenes/Seguros/segurosBicicleta-330x330.png");
+  background-image: url("https://i.ibb.co/HgGGhYb/seguros-Bicicleta-330x330.png");
 }
 
 #hogar {
-  background-image: url("../../imagenes/Seguros/segurosHogar-330x330.png");
-}
-
-#pertenciasPersonales {
-  background-image: url("../../imagenes/Seguros/segurosMochila-330x330.png");
+  background-image: url("https://i.ibb.co/HFY2DHw/seguros-Hogar-330x330.png");
 }
 
 .cpSeguros {
@@ -598,6 +594,30 @@ footer .footerRedes div a #redes {
   .QtSubContainer .QtRta {
     width: 100%;
     text-align: center;
+  }
+}
+
+.exp {
+  font-size: 1.2em;
+  line-height: 1.5;
+  border-radius: 6px;
+  padding: 1vh 1vw;
+  text-decoration: none;
+  margin: 3%;
+  border: #f62a00 solid;
+}
+.exp:hover {
+  animation-duration: 0.3s;
+  animation-name: slidein1;
+  background-color: #f62a00;
+  color: white;
+}
+@keyframes slidein1 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
   }
 }
 
@@ -897,27 +917,54 @@ footer .footerRedes div a #redes {
 }
 
 #accidentes {
-  background-image: url("../../imagenes/Seguros/segurosAccidentes-330x330.png");
+  background-image: url("https://i.ibb.co/0VjPN1Z/seguros-Accidentes-330x330.png");
 }
 
 #contratotrabajo {
-  background-image: url("../../imagenes/Seguros/seguroTrabajo-330x330.png");
+  background-image: url("https://i.ibb.co/5rGLhzm/seguro-Trabajo-330x330.png");
 }
 
 #conveniomercantil {
-  background-image: url("../../imagenes/Seguros/segurosConvenioMercantil-330x330.png");
+  background-image: url("https://i.ibb.co/2Kv5Dcq/seguros-Convenio-Mercantil-330x330.png");
 }
 
 #vidatrabajadores {
-  background-image: url("../../imagenes/Seguros/segurosTrabajadores-330x330.png");
+  background-image: url("https://i.ibb.co/ynzkg37/seguros-Trabajadores-330x330.png");
 }
 
 #corporativos {
-  background-image: url("../../imagenes/Seguros/segurosCorporativos-330x330.png");
+  background-image: url("https://i.ibb.co/PYthvMs/seguros-Corporativos-330x330.png");
 }
 
 .segurosMain {
   padding-top: 7vh;
+}
+
+#btnAccidente, #btnAhorro, #btnAutomotor,
+#btnBicicleta, #btnTrabajo, #btnMercantil,
+#btnCorporativo, #btnHogar, #btnVida, #btnTrabajador {
+  margin: 2vh auto;
+  padding: 1vh 5vw;
+  border-radius: 10px;
+  background-color: #F62A00;
+  color: white;
+  font-weight: bold;
+}
+#btnAccidente:hover, #btnAhorro:hover, #btnAutomotor:hover,
+#btnBicicleta:hover, #btnTrabajo:hover, #btnMercantil:hover,
+#btnCorporativo:hover, #btnHogar:hover, #btnVida:hover, #btnTrabajador:hover {
+  background-color: #d16d59;
+  transform: scale(0.98);
+}
+
+#formAccidente, #formAhorro, #formAutomotor,
+#formBicicleta, #formTrabajo, #formMercantil,
+#formCorporativo, #formHogar, #formVida, #formTrabajador {
+  background-color: rgba(255, 255, 255, 0.076);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #FqContainer {
@@ -1046,7 +1093,7 @@ footer .footerRedes div a #redes {
 }
 
 .ContactoForm {
-  background-image: url(../../imagenes/contactoBackG.png);
+  background-image: url("https://i.ibb.co/KKMVjXb/contacto-Back-G.png");
   background-size: cover;
   padding: 7vh 0vw;
 }
@@ -1268,21 +1315,21 @@ footer .footerRedes div a #redes {
   margin: 2vh auto;
   padding: 4vh 0;
 }
-#formu #checkCont {
+#formu .checkCont {
   background-color: rgba(255, 255, 255, 0.076);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#formu #checkCont .p6 {
+#formu .checkCont .p6 {
   color: white;
   font-size: 1em;
   margin: 0 auto;
   text-align: center;
   padding: 4vh 2vw;
 }
-#formu #checkCont .p7 {
+#formu .checkCont .p7 {
   font-weight: bold;
   color: white;
   text-align: center;
@@ -1290,20 +1337,20 @@ footer .footerRedes div a #redes {
   margin: 0 auto;
   font-size: 1.1em;
 }
-#formu #checkCont .botonSeg {
+#formu .checkCont .botonSeg {
   padding: 2vh 2vw;
   padding-bottom: 6vh;
   margin: 0 6vw;
 }
-#formu #checkCont .botonSeg #botonEnviar {
+#formu .checkCont .botonSeg #botonEnviar {
   background-color: #f62a00;
   border: #f62a00;
 }
-#formu #checkCont .botonSeg #botonEnviar:hover {
+#formu .checkCont .botonSeg #botonEnviar:hover {
   transform: scale(0.97);
   background-color: #ac60519e;
 }
-#formu #checkCont .p8 {
+#formu .checkCont .p8 {
   font-size: 1em;
   color: white;
   margin: 0 auto;
