@@ -24,3 +24,4 @@ As you can see the app is still "under construction" is not possible to give you
 https://belenduhart.github.io/cesarpereyraseguros/
 
 <img src="https://i.ibb.co/bXtzPYy/view.png" alt="vista previa landing page">
+<img src="https://i.ibb.co/Q928ybr/viewmob.png" alt="vista previa landing page mobile">
