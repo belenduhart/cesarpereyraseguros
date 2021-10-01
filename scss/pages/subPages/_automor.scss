@@ -1,0 +1,19 @@
+//Automotor
+#automotorInd{
+    width: 100%;
+    background-image: url('https://i.ibb.co/ZNZSKZb/automotor-LG.png');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.anio{
+    width: 80px;
+    text-align: center;
+    border-radius: 10px;
+}
+select{
+    border-radius: 10px;
+    text-align: center;
+}

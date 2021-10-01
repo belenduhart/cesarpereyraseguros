@@ -1,0 +1,148 @@
+//Seguro accidentes
+#accidentesInd{
+    width: 100%;
+    background-image: url('https://i.ibb.co/HgLftrZ/accidente-LG.png');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+    .p1{
+        font-size: 3em;
+        color: white;
+        font-weight: bold;
+        text-align: left;
+        padding: 1vh 1vw;
+        margin: 0 10%;
+        margin-top: 15%;
+        animation-duration: 3s;
+        animation-name: slidein;
+        @keyframes slidein {
+            from {
+            opacity: 0;
+            }
+            to {
+                opacity: 100%;
+                }
+            }
+        }
+    .p2{
+        font-size: 1.3em;
+        color: white;
+        text-align: left;
+        padding: 1vh 1vw;
+        margin: 4% 10%;
+        width: 45%;
+        animation-duration: 3s;
+        animation-name: slidein1;
+        @keyframes slidein1 {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 100%;
+                }
+            }
+            }
+
+    #txtCentro{
+        width: 100%;
+        background-color: 100%;
+        .p3{
+            color: #f62a00;
+            text-align: center;
+            padding: 8vh 2vw;
+            margin: 0 auto;
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+    }
+    #formu{
+        background-color: #002936;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 9vh;
+        border-bottom: 1px solid white;
+        .p4{
+            text-align: left;
+            padding: 8vh 1vw;
+            font-size: 1.1em;
+            color: white;
+            width: 63%;
+            margin: 0 auto;
+        }
+        .p5{
+            font-size: 2em;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            margin: 2vh auto;
+            padding: 4vh 0;
+        }
+        #checkCont{
+            background-color: rgba(255, 255, 255, 0.076);
+            border-radius: 10px;
+            // width: 30vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .p6{
+                color: white;
+                font-size: 1em;
+                margin: 0 auto;
+                text-align: center;
+                padding: 4vh 2vw;
+            }
+            .p7{
+                font-weight: bold;
+                color: white;
+                text-align: center;
+                padding: 1vh 2vw;
+                margin: 0 auto;
+                font-size: 1.1em;
+            }
+            .botonSeg{
+                padding: 2vh 2vw;
+                padding-bottom: 6vh;
+                margin: 0 6vw;
+                #botonEnviar{
+                    background-color:#f62a00;
+                    border: #f62a00;
+                    &:hover{
+                        transform: scale(0.97);
+                        background-color:#ac60519e ;
+                    }
+                }
+            }
+                .p8{
+                    font-size: 1em;
+                    color: white;
+                    margin: 0 auto;
+                    text-align: center;
+                    padding-bottom: 4vh;
+                }
+        }
+    }
+    .contenedorRedes{
+        width: 30%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin: 0 auto;
+        i{
+            font-size: 3em;
+            padding: 1vh 1vw;
+            color: white;
+        }
+    }
+    .p9{
+        text-align: center;
+        color: white;
+        font-size: 1em;
+        padding:1vh 1vw;
+    }
+

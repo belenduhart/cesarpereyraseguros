@@ -5,18 +5,29 @@
     flex-direction: row;
     flex-wrap: nowrap;
     width: 100%;
-    background-color:#F1F3CE; 
+    background-color:white; 
     justify-content: center;
     align-items: center;
     padding: 7% 1vw;
     @media only screen and (max-width:480px){
-        flex-wrap:wrap;
+        flex-wrap: wrap;
+        padding-top: 12vh;
     }
     .nosotrosCesar {
         
         img{
         width: 80%;
         margin: 0vh 30%;
+        animation-duration: 1s;
+        animation-name: slidein1;
+        @keyframes slidein1 {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 100%;
+                }
+            }
         @media only screen and (max-width:800px){
             margin: 0vh 10%;
         }
@@ -85,7 +96,7 @@
             width: 100%;
         }
         div{
-            background-color: #F1F3CE;
+            background-color: white;
             padding: 5vh 2vw;
             width: 30%;
             position: absolute;
@@ -128,7 +139,7 @@
         }
     }
     .valores{
-        background-color: #F1F3CE;
+        background-color: white;
         display: flex;
         flex-direction: column;
         padding: 15vh 4vw;

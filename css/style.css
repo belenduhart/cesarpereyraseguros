@@ -8,7 +8,7 @@ body {
   font-family: "Open Sans", sans-serif;
   user-select: none;
   scroll-behavior: smooth;
-  background-color: #F1F3CE;
+  background-color: white;
 }
 body a {
   text-decoration: none;
@@ -17,6 +17,10 @@ body a {
 
 #NavBarContainer {
   background-color: #002936;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 43423;
 }
 #NavBarContainer #navbarNav {
   justify-content: right;
@@ -27,7 +31,7 @@ body a {
   padding: 1vh 1vw;
 }
 #NavBarContainer a {
-  color: #F1F3CE;
+  color: white;
   margin: 0vh 1vw;
   font-weight: 500;
   font-size: 1.1em;
@@ -36,7 +40,7 @@ body a {
   background-color: rgba(255, 255, 255, 0.179);
 }
 
-.navbar-toggler-icon {
+#toggler {
   color: white;
 }
 
@@ -51,7 +55,7 @@ footer {
 footer .footerInfo {
   width: 100%;
   background-color: #002936;
-  color: #F1F3CE;
+  color: white;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -59,9 +63,31 @@ footer .footerInfo {
   align-items: center;
   padding-top: 4vh;
 }
+@media only screen and (max-width: 700px) {
+  footer .footerInfo {
+    padding-top: 1vh;
+  }
+}
+footer .footerInfo .footerMobil {
+  display: none;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+}
+@media only screen and (max-width: 700px) {
+  footer .footerInfo .footerMobil {
+    display: block;
+    padding: 1vh 0;
+  }
+}
 footer .footerInfo .footerAcerca {
   margin: 1vh 1vw;
   padding: 1vh 1vw;
+}
+@media only screen and (max-width: 700px) {
+  footer .footerInfo .footerAcerca {
+    display: none;
+  }
 }
 footer .footerInfo .footerAcerca .ulAcerca {
   display: flex;
@@ -69,7 +95,7 @@ footer .footerInfo .footerAcerca .ulAcerca {
   align-items: flex-start;
   line-height: 1.5em;
   font-weight: bold;
-  color: #F1F3CE;
+  color: white;
   font-size: 1em;
 }
 @media only screen and (max-width: 700px) {
@@ -82,7 +108,7 @@ footer .footerInfo .footerAcerca .ulAcerca a {
   color: white;
 }
 footer .footerInfo .footerAcerca .ulAcerca li {
-  color: #F1F3CE;
+  color: white;
   text-align: center;
   list-style: none;
   font-weight: normal;
@@ -95,7 +121,7 @@ footer .footerInfo .footerAcerca .ulAcerca li {
 }
 footer .footerInfo .footerAcerca .ulAcerca li a {
   text-decoration: none;
-  color: #F1F3CE;
+  color: white;
 }
 footer .footerInfo .footerSeguros {
   display: flex;
@@ -110,7 +136,7 @@ footer .footerInfo .footerSeguros {
   }
 }
 footer .footerInfo .footerSeguros p {
-  color: #F1F3CE;
+  color: white;
   font-weight: bold;
   text-align: left;
   margin-left: -45vw;
@@ -132,27 +158,27 @@ footer .footerInfo .footerSeguros div ul {
   font-size: 1em;
 }
 footer .footerInfo .footerSeguros div ul li {
-  color: #F1F3CE;
+  color: white;
   font-weight: normal;
   font-size: 0.8em;
 }
 footer .footerInfo .footerSeguros div ul li a {
   text-decoration: none;
-  color: #F1F3CE;
+  color: white;
   text-align: left;
 }
 footer .footerRedes {
   width: 100%;
   background-color: #002936;
-  color: #F1F3CE;
-  border-top: 1px solid #F1F3CE;
+  color: white;
+  border-top: 1px solid white;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
 }
 footer .footerRedes p {
-  color: #F1F3CE;
+  color: white;
   text-align: left;
   padding: 1vw 1vh;
   font-size: 0.8em;
@@ -163,10 +189,10 @@ footer .footerRedes div {
 }
 footer .footerRedes div a {
   text-decoration: none;
-  color: #F1F3CE;
+  color: white;
 }
 footer .footerRedes div a #redes {
-  color: #F1F3CE;
+  color: white;
   background-color: rgba(128, 128, 128, 0.755);
   border-radius: 50%;
   padding: 2vh 1vw;
@@ -212,10 +238,20 @@ footer .footerRedes div a #redes {
   font-size: 4.5em;
   font-weight: bold;
   margin: 10% 0 0 15%;
+  animation-duration: 1s;
+  animation-name: slidein1;
+}
+@keyframes slidein1 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
 }
 .carrousel .btn {
   width: 13%;
-  height: 8%;
+  height: 45%;
   margin: 5% 0 0 15%;
   font-size: 1.2em;
   color: white;
@@ -446,6 +482,7 @@ footer .footerRedes div a #redes {
 .QtcontainerCenter {
   display: flex;
   margin-left: 30px;
+  justify-content: space-around;
 }
 @media only screen and (max-width: 480px) {
   .QtcontainerCenter {
@@ -460,7 +497,7 @@ footer .footerRedes div a #redes {
 
 .FqTitulo {
   font-size: 2.5em;
-  color: #f1f3ce;
+  color: white;
   font-weight: bold;
   text-align: left;
   padding-left: 9vw;
@@ -469,6 +506,7 @@ footer .footerRedes div a #redes {
 @media only screen and (max-width: 480px) {
   .FqTitulo {
     font-size: 1px;
+    text-align: center;
   }
 }
 
@@ -482,45 +520,46 @@ footer .footerRedes div a #redes {
   .QtContainerIndex {
     margin-top: 10px;
     justify-content: center;
+    flex-direction: column;
   }
 }
 .QtContainerIndex #QtIcon1 {
   color: #ef775f;
   font-size: 2em;
-  background-color: #f1f3ce;
+  background-color: white;
   border-radius: 50%;
   margin: 1vh 2vw;
   padding: 3vh 2vw;
 }
 @media only screen and (max-width: 480px) {
   .QtContainerIndex #QtIcon1 {
-    display: none;
+    background-color: transparent;
   }
 }
 .QtContainerIndex #QtIcon2 {
   color: #ef775f;
   font-size: 2em;
-  background-color: #f1f3ce;
+  background-color: white;
   border-radius: 50%;
   margin: 1vh 2vw;
   padding: 3vh 1vw;
 }
 @media only screen and (max-width: 480px) {
   .QtContainerIndex #QtIcon2 {
-    display: none;
+    background-color: transparent;
   }
 }
 .QtContainerIndex #QtIcon3 {
   color: #ef775f;
   font-size: 2em;
-  background-color: #f1f3ce;
+  background-color: white;
   border-radius: 50%;
   margin: 1vh 2vw;
   padding: 3vh 1.5vw;
 }
 @media only screen and (max-width: 480px) {
   .QtContainerIndex #QtIcon3 {
-    display: none;
+    background-color: transparent;
   }
 }
 
@@ -536,7 +575,7 @@ footer .footerRedes div a #redes {
 .QtSubContainer .Qt {
   font-size: 1.2em;
   font-weight: 600;
-  color: #f1f3ce;
+  color: white;
   text-align: left;
   margin-bottom: 0vh;
 }
@@ -546,12 +585,12 @@ footer .footerRedes div a #redes {
   }
 }
 .QtSubContainer .Qt .fas fa-arrow-down {
-  color: #f1f3ce;
+  color: white;
   padding: 1vh 1vw;
 }
 .QtSubContainer .QtRta {
   font-size: 1em;
-  color: #f1f3ce;
+  color: white;
   text-align: left;
   width: 70%;
 }
@@ -567,7 +606,7 @@ footer .footerRedes div a #redes {
   flex-direction: row;
   flex-wrap: nowrap;
   width: 100%;
-  background-color: #F1F3CE;
+  background-color: white;
   justify-content: center;
   align-items: center;
   padding: 7% 1vw;
@@ -575,11 +614,22 @@ footer .footerRedes div a #redes {
 @media only screen and (max-width: 480px) {
   .nosotros1 {
     flex-wrap: wrap;
+    padding-top: 12vh;
   }
 }
 .nosotros1 .nosotrosCesar img {
   width: 80%;
   margin: 0vh 30%;
+  animation-duration: 1s;
+  animation-name: slidein1;
+}
+@keyframes slidein1 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
 }
 @media only screen and (max-width: 800px) {
   .nosotros1 .nosotrosCesar img {
@@ -655,7 +705,7 @@ footer .footerRedes div a #redes {
   width: 100%;
 }
 .nosotros2 .imagenTextoBlog div {
-  background-color: #F1F3CE;
+  background-color: white;
   padding: 5vh 2vw;
   width: 30%;
   position: absolute;
@@ -701,7 +751,7 @@ footer .footerRedes div a #redes {
   color: #1E656D;
 }
 .nosotros2 .valores {
-  background-color: #F1F3CE;
+  background-color: white;
   display: flex;
   flex-direction: column;
   padding: 15vh 4vw;
@@ -866,6 +916,10 @@ footer .footerRedes div a #redes {
   background-image: url("../../imagenes/Seguros/segurosCorporativos-330x330.png");
 }
 
+.segurosMain {
+  padding-top: 7vh;
+}
+
 #FqContainer {
   width: 100%;
   display: flex;
@@ -875,7 +929,7 @@ footer .footerRedes div a #redes {
 }
 #FqContainer .FqTitulo {
   font-size: 2.5em;
-  color: #f1f3ce;
+  color: white;
   font-weight: bold;
   text-align: left;
   padding-left: 9vw;
@@ -901,7 +955,7 @@ footer .footerRedes div a #redes {
 #FqContainer .QtContainer #QtIcon1 {
   color: #ef775f;
   font-size: 2em;
-  background-color: #f1f3ce;
+  background-color: white;
   border-radius: 50%;
   margin: 1vh 2vw;
   padding: 3vh 2vw;
@@ -914,7 +968,7 @@ footer .footerRedes div a #redes {
 #FqContainer .QtContainer #QtIcon2 {
   color: #ef775f;
   font-size: 2em;
-  background-color: #f1f3ce;
+  background-color: white;
   border-radius: 50%;
   margin: 1vh 2vw;
   padding: 3vh 1vw;
@@ -927,7 +981,7 @@ footer .footerRedes div a #redes {
 #FqContainer .QtContainer #QtIcon3 {
   color: #ef775f;
   font-size: 2em;
-  background-color: #f1f3ce;
+  background-color: white;
   border-radius: 50%;
   margin: 1vh 2vw;
   padding: 3vh 1.5vw;
@@ -944,9 +998,19 @@ footer .footerRedes div a #redes {
 #FqContainer .QtSubContainer .Qt {
   font-size: 1.2em;
   font-weight: 600;
-  color: #f1f3ce;
+  color: white;
   text-align: left;
   margin-bottom: 0vh;
+  animation-duration: 3s;
+  animation-name: slidein1;
+}
+@keyframes slidein1 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
 }
 @media only screen and (max-width: 800px) {
   #FqContainer .QtSubContainer .Qt {
@@ -954,17 +1018,28 @@ footer .footerRedes div a #redes {
   }
 }
 #FqContainer .QtSubContainer .Qt .fas fa-arrow-down {
-  color: #f1f3ce;
+  color: white;
   padding: 1vh 1vw;
 }
-#FqContainer .QtSubContainer .QtRta {
+#FqContainer .QtSubContainer .qt1, #FqContainer .QtSubContainer .qt2, #FqContainer .QtSubContainer .qt3, #FqContainer .QtSubContainer .qt4, #FqContainer .QtSubContainer .qt5, #FqContainer .QtSubContainer .qt6 {
+  display: none;
   font-size: 1em;
-  color: #f1f3ce;
+  color: white;
   text-align: left;
   width: 70%;
+  animation-duration: 1s;
+  animation-name: slidein1;
+}
+@keyframes slidein1 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
 }
 @media only screen and (max-width: 800px) {
-  #FqContainer .QtSubContainer .QtRta {
+  #FqContainer .QtSubContainer .qt1, #FqContainer .QtSubContainer .qt2, #FqContainer .QtSubContainer .qt3, #FqContainer .QtSubContainer .qt4, #FqContainer .QtSubContainer .qt5, #FqContainer .QtSubContainer .qt6 {
     text-align: center;
     width: 100%;
   }
@@ -980,7 +1055,18 @@ footer .footerRedes div a #redes {
   font-weight: bold;
   font-size: 2em;
   padding: 2vh 2vw;
+  padding-top: 9vh;
   text-align: center;
+  animation-duration: 1s;
+  animation-name: slidein1;
+}
+@keyframes slidein1 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
 }
 .ContactoForm .Formulario {
   width: 40%;
@@ -1003,14 +1089,14 @@ footer .footerRedes div a #redes {
   color: white;
   font-weight: bold;
 }
-.ContactoForm .Formulario .inputForm input {
-  margin: 1vh 1vw;
+.ContactoForm .Formulario .inputForm #name1, .ContactoForm .Formulario .inputForm #mail1 {
+  margin: 1vh 1vw !important;
 }
 .ContactoForm .Formulario .texto {
   color: white;
   font-weight: bold;
 }
-.ContactoForm .Formulario textarea {
+.ContactoForm .Formulario #txt1 {
   margin-top: 0px;
   margin-bottom: 0px;
   height: 165px;
@@ -1018,7 +1104,7 @@ footer .footerRedes div a #redes {
 .ContactoForm .Formulario .divBoton {
   margin: 1vh auto;
 }
-.ContactoForm .Formulario .divBoton .botonEnviar {
+.ContactoForm .Formulario .divBoton #botonEnviar {
   margin: 2vh auto;
   padding: 1vh 5vw;
   border-radius: 10px;
@@ -1026,7 +1112,7 @@ footer .footerRedes div a #redes {
   color: white;
   font-weight: bold;
 }
-.ContactoForm .Formulario .divBoton .botonEnviar:hover {
+.ContactoForm .Formulario .divBoton #botonEnviar:hover {
   background-color: #d16d59;
   transform: scale(0.98);
 }
@@ -1034,117 +1120,317 @@ footer .footerRedes div a #redes {
 .buscanosSection {
   width: 100%;
   background-color: #F1F3CE;
-  padding-top: 220px;
-  height: 100%;
+}
+.buscanosSection .contenedor1 {
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: 80%;
+  margin: 0 auto;
   flex-wrap: wrap;
+  padding: 2vh 0;
+  justify-content: center;
 }
-@media screen and (max-width: 707px) {
-  .buscanosSection {
-    padding-top: 2vh;
-    height: 61vh;
-  }
-}
-.buscanosSection .buscanosContainer {
+.buscanosSection .contenedor1 .buscanosContainer {
   display: flex;
   flex-direction: column;
   background-color: #F62A00;
   border-radius: 10px;
-  width: 925px;
-  padding: 50px 30px;
-  height: 285px;
-  margin: 0 auto;
+  padding: 11vh 4vw;
 }
-@media screen and (max-width: 707px) {
-  .buscanosSection .buscanosContainer {
-    height: 70%;
-  }
-}
-.buscanosSection .buscanosContainer .buscanosTitulo {
+.buscanosSection .contenedor1 .buscanosContainer .buscanosTitulo {
   font-size: 2em;
   font-weight: bold;
   color: #F1F3CE;
   text-align: left;
-  width: 45%;
 }
-@media screen and (max-width: 707px) {
-  .buscanosSection .buscanosContainer .buscanosTitulo {
-    width: 100%;
-  }
-}
-.buscanosSection .buscanosContainer .buscanosTxt {
+.buscanosSection .contenedor1 .buscanosContainer .buscanosTxt {
   color: #F1F3CE;
   font-size: 1em;
   text-align: left;
-  width: 45%;
 }
-@media only screen and (max-width: 707px) {
-  .buscanosSection .buscanosContainer .buscanosTxt {
-    width: 100%;
-  }
-}
-.buscanosSection .iphoneDiv {
+.buscanosSection .contenedor1 .IphoneDiv {
   display: flex;
   flex-direction: row;
-  position: relative;
-  left: 50%;
-  bottom: 426px;
+  justify-content: center;
 }
-@media only screen and (max-width: 707px) {
-  .buscanosSection .iphoneDiv {
-    bottom: 76px;
-    left: 0vw;
-    margin: 0vh;
-  }
-}
-.buscanosSection .iphoneDiv .iphoneImg {
-  width: 304px;
-  height: 500px;
-  position: relative;
-  right: 220px;
-}
-@media screen and (max-width: 707px) {
-  .buscanosSection .iphoneDiv .iphoneImg {
-    display: none;
-  }
-}
-.buscanosSection .iphoneDiv .IphoneIcons {
+.buscanosSection .contenedor1 .IphoneDiv .IphoneIcons {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  margin: 0 auto;
-  padding: 20px 10px;
   z-index: 1;
-  position: relative;
-  top: 0vh;
-  left: 59px;
-  width: 256px;
+  width: 200px;
+  height: 50%;
+  padding-top: 77px;
+  position: absolute;
 }
-@media screen and (max-width: 707px) {
-  .buscanosSection .iphoneDiv .IphoneIcons {
-    width: 100%;
-    left: 0;
-    margin: 0 auto;
-    top: 63px;
-  }
-}
-.buscanosSection .iphoneDiv .IphoneIcons .iconDiv {
+.buscanosSection .contenedor1 .IphoneDiv .IphoneIcons .iconDiv {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
   padding: 1vh 1vw;
 }
-.buscanosSection .iphoneDiv .IphoneIcons .iconDiv:hover {
+.buscanosSection .contenedor1 .IphoneDiv .IphoneIcons .iconDiv:hover {
   transform: scale(0.92);
 }
-.buscanosSection .iphoneDiv .IphoneIcons .iconDiv .iIconText {
+.buscanosSection .contenedor1 .IphoneDiv .IphoneIcons .iconDiv .iIconText {
   text-align: center;
   font-weight: bold;
   color: black;
+}
+
+#accidentesInd {
+  width: 100%;
+  background-image: url("https://i.ibb.co/HgLftrZ/accidente-LG.png");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.p1 {
+  font-size: 3em;
+  color: white;
+  font-weight: bold;
+  text-align: left;
+  padding: 1vh 1vw;
+  margin: 0 10%;
+  margin-top: 15%;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+.p2 {
+  font-size: 1.3em;
+  color: white;
+  text-align: left;
+  padding: 1vh 1vw;
+  margin: 4% 10%;
+  width: 45%;
+  animation-duration: 3s;
+  animation-name: slidein1;
+}
+@keyframes slidein1 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+#txtCentro {
+  width: 100%;
+  background-color: 100%;
+}
+#txtCentro .p3 {
+  color: #f62a00;
+  text-align: center;
+  padding: 8vh 2vw;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+#formu {
+  background-color: #002936;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 9vh;
+  border-bottom: 1px solid white;
+}
+#formu .p4 {
+  text-align: left;
+  padding: 8vh 1vw;
+  font-size: 1.1em;
+  color: white;
+  width: 63%;
+  margin: 0 auto;
+}
+#formu .p5 {
+  font-size: 2em;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin: 2vh auto;
+  padding: 4vh 0;
+}
+#formu #checkCont {
+  background-color: rgba(255, 255, 255, 0.076);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#formu #checkCont .p6 {
+  color: white;
+  font-size: 1em;
+  margin: 0 auto;
+  text-align: center;
+  padding: 4vh 2vw;
+}
+#formu #checkCont .p7 {
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  padding: 1vh 2vw;
+  margin: 0 auto;
+  font-size: 1.1em;
+}
+#formu #checkCont .botonSeg {
+  padding: 2vh 2vw;
+  padding-bottom: 6vh;
+  margin: 0 6vw;
+}
+#formu #checkCont .botonSeg #botonEnviar {
+  background-color: #f62a00;
+  border: #f62a00;
+}
+#formu #checkCont .botonSeg #botonEnviar:hover {
+  transform: scale(0.97);
+  background-color: #ac60519e;
+}
+#formu #checkCont .p8 {
+  font-size: 1em;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 4vh;
+}
+
+.contenedorRedes {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+.contenedorRedes i {
+  font-size: 3em;
+  padding: 1vh 1vw;
+  color: white;
+}
+
+.p9 {
+  text-align: center;
+  color: white;
+  font-size: 1em;
+  padding: 1vh 1vw;
+}
+
+#ahorroInd {
+  width: 100%;
+  background-image: url("https://i.ibb.co/hycpQLh/ahorroLG.png");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#automotorInd {
+  width: 100%;
+  background-image: url("https://i.ibb.co/ZNZSKZb/automotor-LG.png");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.anio {
+  width: 80px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+select {
+  border-radius: 10px;
+  text-align: center;
+}
+
+#bicicletaInd {
+  width: 100%;
+  background-image: url("https://i.ibb.co/0V998Yn/bicicleta-LG.png");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#hogarInd {
+  width: 100%;
+  background-image: url("https://i.ibb.co/DzfzNc5/casaLG.png");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#trabajoInd {
+  width: 100%;
+  background-image: url("https://i.ibb.co/gvg73Xb/trabajo-LG.png");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#convenioInd {
+  width: 100%;
+  background-image: url("https://i.ibb.co/LkmGsTW/mercantil-LG.png");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#corporativoInd {
+  width: 100%;
+  background-image: url("https://i.ibb.co/nww12qB/corporativos-LG.png");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#trabajadoresInd {
+  width: 100%;
+  background-image: url("https://i.ibb.co/NN397Ck/trabajador-LG.png");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#vidaInd {
+  width: 100%;
+  background-image: url("https://i.ibb.co/pXCcCpw/vidaLG.png");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -8,7 +8,18 @@
         font-weight: bold;
         font-size: 2em;
         padding: 2vh 2vw;
+        padding-top: 9vh;
         text-align: center;
+        animation-duration: 1s;
+        animation-name: slidein1;
+        @keyframes slidein1 {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 100%;
+                }
+            }
     }
     .Formulario{
         width: 40%;
@@ -27,22 +38,22 @@
                 color: white;
                 font-weight: bold;
         }
-        input{
-            margin: 1vh 1vw;
+        #name1, #mail1{
+            margin: 1vh 1vw !important;
         }
     }
     .texto{
         color: white;
         font-weight: bold;
     }
-    textarea{
+    #txt1{
         margin-top: 0px;
         margin-bottom: 0px;
         height: 165px;
     }
     .divBoton{
         margin:1vh auto;
-        .botonEnviar{
+        #botonEnviar{
             margin: 2vh auto;
             padding: 1vh 5vw;
             border-radius: 10px;
@@ -62,105 +73,69 @@
 .buscanosSection{
     width: 100%;
     background-color: #F1F3CE;
-    padding-top: 220px;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    @media screen and (max-width:707px){
-        padding-top:2vh;
-        height: 61vh;
-    }
-.buscanosContainer{
-    display: flex;
-    flex-direction: column;
-    background-color: #F62A00;
-    border-radius: 10px;
-    width: 925px;
-    padding: 50px 30px;
-    height: 285px;
-    margin: 0 auto;
-    @media  screen and (max-width:707px){
-        height: 70%;
-    }
-
-            .buscanosTitulo{
-                font-size: 2em;
-                font-weight: bold;
-                color: #F1F3CE;
-                text-align: left;
-                width: 45%;
-                @media screen and (max-width:707px){
-                    width:100%;
-                }
-
-            }
-            .buscanosTxt{
-                color: #F1F3CE;
-                font-size: 1em;
-                text-align: left;
-                width: 45%;
-                @media only screen and (max-width:707px){
-                    width:100%;
-                }
-            }
-}
-.iphoneDiv{
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    left: 50%;
-    bottom: 426px;
-        @media only screen and (max-width:707px){
-            bottom: 76px;
-            left: 0vw;
-            margin: 0vh;
-        }
-    .iphoneImg{
-        width: 304px;
-        height: 500px;
-        position: relative;
-        right: 220px;
-            @media screen and (max-width:707px){
-                display:none;
-            }
-    }
-    .IphoneIcons{
+    .contenedor1{
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
         align-items: center;
+        width: 80%;
         margin: 0 auto;
-        padding: 20px 10px;
-        z-index: 1;
-        position: relative;
-        top: 0vh;
-        left: 59px;
-        width: 256px;
-        @media screen and (max-width:707px){
-            width:100%;
-            left:0;
-            margin: 0 auto;
-            top: 63px;
-        }
-        .iconDiv{
+        flex-wrap: wrap;
+        padding: 2vh 0;
+        justify-content: center;
+        .buscanosContainer{
             display: flex;
             flex-direction: column;
-            align-items: center;
-            margin: 0 auto;
-            padding: 1vh 1vw;
-            &:hover{
-                transform:scale(0.92);
-            }
-            .iIconText{
-                text-align: center;
-                font-weight: bold;
-                color: black;
-            }
+            background-color: #F62A00;
+            border-radius: 10px;
+            padding: 11vh 4vw;
+                .buscanosTitulo{
+                    font-size: 2em;
+                    font-weight: bold;
+                    color: #F1F3CE;
+                    text-align: left;
+                    // width: 45%;
+                }
+                .buscanosTxt{
+                    color: #F1F3CE;
+                    font-size: 1em;
+                    text-align: left;
+                    // width: 45%;
+                }
+        }
+        .IphoneDiv{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            // .iphoneImg{} 
+                .IphoneIcons{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    z-index: 1;
+                    width: 200px;
+                    height: 50%;
+                    padding-top: 77px;
+                    position: absolute;
+                    .iconDiv{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin: 0 auto;
+                        padding: 1vh 1vw;
+                        
+                        &:hover{
+                            transform:scale(0.92);
+                        }
+                        .iIconText{
+                            text-align: center;
+                            font-weight: bold;
+                            color: black;
+                        }
+                    }
+                }
         }
     }
-}
 }
 
 
