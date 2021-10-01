@@ -980,7 +980,7 @@ footer .footerRedes div a #redes {
   font-weight: bold;
   text-align: left;
   padding-left: 9vw;
-  padding-top: 7vh;
+  padding-top: 16vh;
 }
 @media only screen and (max-width: 500px) {
   #FqContainer .FqTitulo {
