@@ -9,24 +9,40 @@ footer{
     .footerInfo{
         width: 100%;
         background-color: #002936;
-        color: #F1F3CE;
+        color: white;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-around;
         align-items: center;
         padding-top: 4vh;
-
+        @media only screen and (max-width:700px) {
+            padding-top: 1vh;
+        }
+        
+        .footerMobil{
+            display: none;
+            color: white;
+            font-size: 1em;
+            font-weight: bold;
+            @media only screen and (max-width:700px) {
+                display:block;
+                padding: 1vh 0;
+            }
+        }
         .footerAcerca{
             margin: 1vh 1vw;
             padding: 1vh 1vw;
+            @media only screen and (max-width:700px) {
+                display:none;
+            }
             .ulAcerca{
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
                 line-height: 1.5em;
                 font-weight: bold;
-                color: #F1F3CE;
+                color: white;
                 font-size: 1em;
                 @media only screen and (max-width:700px) {
                     flex-direction: row;
@@ -36,7 +52,7 @@ footer{
                     color: white;
                 }
                 li{
-                    color:#F1F3CE;
+                    color:white;
                     text-align: center;
                     list-style: none;
                     font-weight: normal;
@@ -46,7 +62,7 @@ footer{
                     }
                     a{
                         text-decoration: none;
-                        color: #F1F3CE;
+                        color: white;
                     }
                 }
             }
@@ -62,7 +78,7 @@ footer{
                 
             }
             p{
-                color: #F1F3CE;
+                color: white;
                 font-weight: bold;
                 text-align: left;
                 margin-left: -45vw;
@@ -82,12 +98,12 @@ footer{
                     font-weight: bold;
                     font-size: 1em;
                     li{
-                        color:#F1F3CE;
+                        color:white;
                         font-weight: normal;
                         font-size: 0.8em;
                         a{
                             text-decoration: none;
-                            color: #F1F3CE;
+                            color: white;
                             text-align: left;
                         }
                     }
@@ -98,14 +114,14 @@ footer{
     .footerRedes{
         width: 100%;
         background-color: #002936;
-        color: #F1F3CE;
-        border-top: 1px solid #F1F3CE;
+        color: white;
+        border-top: 1px solid white;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
         p{
-            color: #F1F3CE;
+            color: white;
             text-align: left;
             padding: 1vw 1vh;
             font-size: 0.8em;
@@ -115,9 +131,9 @@ footer{
             flex-direction: row;
             a{
                 text-decoration: none;
-                color: #F1F3CE;
+                color: white;
                 #redes{
-                    color: #F1F3CE;
+                    color: white;
                     background-color: rgba(128, 128, 128, 0.755);
                     border-radius: 50%;
                     padding: 2vh 1vw;

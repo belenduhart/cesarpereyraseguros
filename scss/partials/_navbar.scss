@@ -1,9 +1,10 @@
 //NavBar
-@import "../utilities/colors";
-
-
 #NavBarContainer{
     background-color: #002936;
+    position:fixed;
+    top: 0;
+    width: 100%;
+    z-index: 43423;
     #navbarNav{
         justify-content: right;
         margin: 1vh 1vw;
@@ -13,7 +14,7 @@
         padding: 1vh 1vw;
     }
     a{
-        color: #F1F3CE;
+        color: white;
         margin: 0vh 1vw;
         font-weight: 500;
         font-size: 1.1em;
@@ -23,6 +24,6 @@
     }
 }
 
-.navbar-toggler-icon{
+#toggler{
     color:white;
 }

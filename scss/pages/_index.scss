@@ -34,11 +34,21 @@
     font-size: 4.5em;
     font-weight: bold;
     margin: 10% 0 0 15%;
+    animation-duration: 1s;
+    animation-name: slidein1;
+    @keyframes slidein1 {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 100%;
+            }
+        }
   }
 
   .btn {
     width: 13%;
-    height: 8%;
+    height: 45%;
     margin: 5% 0 0 15%;
     font-size: 1.2em;
     color: white;
@@ -86,7 +96,7 @@
   }
 }
 
-// ---- Seccion Nuestros Segugos ----
+// ---- Seccion Nuestros Seguros ----
 .nuestrosSeguros {
   background-color: #002936;
   text-align: center;
@@ -264,6 +274,7 @@
 .QtcontainerCenter {
   display: flex;
   margin-left: 30px;
+  justify-content: space-around;
 
   @media only screen and (max-width: 480px) {
     display: block;
@@ -277,13 +288,14 @@
 
 .FqTitulo {
   font-size: 2.5em;
-  color: #f1f3ce;
+  color: white;
   font-weight: bold;
   text-align: left;
   padding-left: 9vw;
   padding-top: 7vh;
   @media only screen and (max-width: 480px) {
     font-size: 1px;
+    text-align: center;
   }
 }
 .QtContainerIndex {
@@ -294,38 +306,39 @@
   @media only screen and (max-width: 480px) {
     margin-top: 10px;
     justify-content: center;
+    flex-direction: column;
   }
   #QtIcon1 {
     color: #ef775f;
     font-size: 2em;
-    background-color: #f1f3ce;
+    background-color: white;
     border-radius: 50%;
     margin: 1vh 2vw;
     padding: 3vh 2vw;
     @media only screen and (max-width: 480px) {
-      display: none;
+      background-color: transparent;
     }
   }
   #QtIcon2 {
     color: #ef775f;
     font-size: 2em;
-    background-color: #f1f3ce;
+    background-color: white;
     border-radius: 50%;
     margin: 1vh 2vw;
     padding: 3vh 1vw;
     @media only screen and (max-width: 480px) {
-      display: none;
+      background-color: transparent;
     }
   }
   #QtIcon3 {
     color: #ef775f;
     font-size: 2em;
-    background-color: #f1f3ce;
+    background-color: white;
     border-radius: 50%;
     margin: 1vh 2vw;
     padding: 3vh 1.5vw;
     @media only screen and (max-width: 480px) {
-      display: none;
+      background-color: transparent;
     }
   }
 }
@@ -338,20 +351,20 @@
   .Qt {
     font-size: 1.2em;
     font-weight: 600;
-    color: #f1f3ce;
+    color: white;
     text-align: left;
     margin-bottom: 0vh;
     @media only screen and (max-width: 480px) {
       font-size: 1em;
     }
     .fas fa-arrow-down {
-      color: #f1f3ce;
+      color: white;
       padding: 1vh 1vw;
     }
   }
   .QtRta {
     font-size: 1em;
-    color: #f1f3ce;
+    color: white;
     text-align: left;
     width: 70%;
     @media only screen and (max-width: 480px) {
