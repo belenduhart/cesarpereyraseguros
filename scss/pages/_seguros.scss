@@ -1,24 +1,27 @@
 //Pagina seguros
 #accidentes {
-    background-image: url("../../imagenes/Seguros/segurosAccidentes-330x330.png");
+    background-image: url("https://i.ibb.co/0VjPN1Z/seguros-Accidentes-330x330.png");
 }
 
 #contratotrabajo {
-    background-image: url("../../imagenes/Seguros/seguroTrabajo-330x330.png");
+    background-image: url("https://i.ibb.co/5rGLhzm/seguro-Trabajo-330x330.png");
 }
 
 #conveniomercantil {
-    background-image: url("../../imagenes/Seguros/segurosConvenioMercantil-330x330.png");
+    background-image: url("https://i.ibb.co/2Kv5Dcq/seguros-Convenio-Mercantil-330x330.png");
 }
 
 #vidatrabajadores {
-    background-image: url("../../imagenes/Seguros/segurosTrabajadores-330x330.png");
+    background-image: url("https://i.ibb.co/ynzkg37/seguros-Trabajadores-330x330.png");
 }
 
 #corporativos {
-    background-image: url("../../imagenes/Seguros/segurosCorporativos-330x330.png");
+    background-image: url("https://i.ibb.co/PYthvMs/seguros-Corporativos-330x330.png");
 }
 
 .segurosMain{
     padding-top:7vh;
 }
+
+//Botones
+@import '../partials/submitbtns';

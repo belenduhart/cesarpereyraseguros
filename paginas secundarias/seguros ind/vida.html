@@ -23,6 +23,37 @@
     <script src="https://kit.fontawesome.com/e6eec834c7.js" crossorigin="anonymous"></script>
     <!-- Linkeo Favicon -->
     <link rel="shortcut icon" href="../../imagenes/favicon.ico" type="image/x-icon">
+
+        <!-- Open Graph -->
+        <meta property="og:site_name" content="C.P. SEGUROS">
+        <meta property="og:tittle" content="CESAR PEREYRA SEGUROS">
+        <meta property="og:author" content="Belen y Diego Developing">
+        <meta property="og:type" content="website">
+        <!-- URL temporal -->
+        <meta property="og:url" content="https://belenduhart.github.io/cesarpereyraseguros/">
+        <meta property="og:description" content="C.P. Seguros, liderado por Cesar Pereyra como asesor 
+        de seguros y finanzas personales. Descubri todas las ventajas de estar asegurado y deja
+        en nuestras manos tu seguridad la de los que te rodean">
+        <!-- FACEBOOK Y SMS -->
+        <meta property="og:tittle" content="CESAR PEREYRA SEGUROS">
+        <meta property="og:image:url" content="https://i.ibb.co/NN397Ck/trabajador-LG.png">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+        <meta property="og:image:alt" content="C.P Seguros.">
+        <meta property="fb:app_id" content="928977633900253" />
+        <!-- TWITTER -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:description" content="Descubri todas las ventajas de estar asegurado y deja
+        en nuestras manos tu seguridad la de los que te rodean">
+        <meta name="twitter:title" content="CESAR PEREYRA SEGUROS">
+        <meta name="twitter:image:url" content="https://i.ibb.co/NN397Ck/trabajador-LG.png">
+        <meta property="og:image:width" content="1024">
+        <meta property="og:image:height" content="512">
+        <!-- WHATSAPP -->
+        <meta property="og:image:url" content="https://i.ibb.co/NN397Ck/trabajador-LG.png">
+        <meta property="og:image:type" content="website">
+        <meta property="og:image:width" content="256">
+        <meta property="og:image:height" content="256">
 </head>
 <body>
     <!-- h1 para posicionamiento -->
@@ -85,21 +116,21 @@
             <p class="p5">
                 ¡Contactanos y recibe más información!
             </p>
-            <form id="checkCont" class="formVida container">
+            <form id="formVida" class="checkCont container">
                 <p class="p7">
                     ¿Para quién es el seguro?
                 </p>
                 <p class="p6">
-                    <input type="checkbox" checked>
+                    <input type="checkbox" id="mi" checked>
                 Para mi</p>
                 <p class="p6">
-                        <input type="checkbox" >
+                        <input type="checkbox"  id="pareja">
                         Para mi + pareja</p>
                 <p class="p6">
-                    <input type="checkbox">
+                    <input type="checkbox" id="familia">
                     Para mi + familia</p>
                     <p class="p7">
-                        ¿Para quién es el seguro?
+                        Elegir opcion de seguro
                     </p>
                     <select id="vidaSeguro" value="Seguro">
                         <option value="Transplante" id="">Transplante</option>
@@ -116,7 +147,7 @@
                         Continua con tu asesoramiento
                     </p>
                     <div class="botonSeg">
-                        <button id="botonEnviar" class="btnHogar btn btn-primary" type="submit"><i class="fab fa-whatsapp"></i>  Enviar Whatsapp</button>
+                        <button id="btnVida" onclick="Vida()" class=" btn btn-primary" type="submit"><i class="fab fa-whatsapp"></i>  Enviar Whatsapp</button>
                     </div>
                     <p class="p8">
                         Comunicate con nosotros para que podamos
@@ -182,7 +213,7 @@
                     <a href="bicicleta.html">Robo Bicicleta</a>
                 </li>
                 <li>
-                    <a href="ahorroInversion.html">Combinado Familiar</a>
+                    <a href="hogar.html">Combinado Familiar</a>
                 </li>
             </ul>
             <ul class="ulSeguros">Seguros de vida y ahorro

@@ -168,28 +168,25 @@
 }
 
 #ahorroInversion {
-  background-image: url("../../imagenes/Seguros/segurosAhorro-330x330.png");
+  background-image: url("https://i.ibb.co/Pwz6pL8/seguros-Ahorro-330x330.png");
 }
 
 #vida {
-  background-image: url("../../imagenes/Seguros/segurosVida-330x330.png");
+  background-image: url("https://i.ibb.co/L0YZZ3k/seguros-Vida-330x330.png");
 }
 
 #automotor {
-  background-image: url("../../imagenes/Seguros/segurosAutomotor-330x330.png");
+  background-image: url("https://i.ibb.co/qjf5FgH/seguros-Automotor-330x330.png");
 }
 
 #bicicleta {
-  background-image: url("../../imagenes/Seguros/segurosBicicleta-330x330.png");
+  background-image: url("https://i.ibb.co/HgGGhYb/seguros-Bicicleta-330x330.png");
 }
 
 #hogar {
-  background-image: url("../../imagenes/Seguros/segurosHogar-330x330.png");
+  background-image: url("https://i.ibb.co/HFY2DHw/seguros-Hogar-330x330.png");
 }
 
-#pertenciasPersonales {
-  background-image: url("../../imagenes/Seguros/segurosMochila-330x330.png");
-}
 
 // ---- Seccion CPSeguros ----
 .cpSeguros {
@@ -372,4 +369,29 @@
       text-align: center;
     }
   }
+}
+
+.exp{
+  font-size: 1.2em;
+  line-height: 1.5;
+  border-radius: 6px;
+  padding: 1vh 1vw;
+  text-decoration: none;
+  margin: 3%;
+  border: #f62a00 solid;
+  &:hover{
+    animation-duration: 0.3s;
+    animation-name: slidein1;
+    @keyframes slidein1 {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 100%;
+            }
+        }
+    background-color: #f62a00;
+    color: white;
+  }
+  
 }
