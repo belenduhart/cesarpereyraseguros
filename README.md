@@ -17,10 +17,10 @@ SASS <br>
 JavaScript <br>
 
 ## Demo <br>
-Al estar aún en pleno desarrollo no se encuentra disponible un link al Demo de la web pero puedes comenzar a correr la misma ingresando al siguiente link: <br>
+Demo de la web, puedes comenzar a correr la misma ingresando al siguiente link: <br>
 https://belenduhart.github.io/cesarpereyraseguros/
 
-As you can see the app is still "under construction" is not possible to give you demo's link, but if you want to run it just open the following link on your browser: <br>
+If you want to run it just open the following link on your browser: <br>
 https://belenduhart.github.io/cesarpereyraseguros/
 
 <img src="https://i.ibb.co/bXtzPYy/view.png" alt="vista previa landing page">
