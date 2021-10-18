@@ -1,0 +1,35 @@
+        <div>
+            <a href=""> <i id="redes" class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/cpsegurosgarantizados/?hl=es"><i id="redes" class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/cesar-pereyra-862a62165/"><i id="redes" class="fab fa-linkedin-in"></i></a>
+            <a href="https://wa.me/6491124503118"> <i id="redes" class="fab fa-whatsapp"></i></a>
+        </div>
+
+https://cpsegurosgarantizados.blogspot.com/2021/07/contrato-de-seguros.html
+
+
+
+
+//Imagenes
+https://i.ibb.co/HgLftrZ/accidente-LG.png
+https://i.ibb.co/hycpQLh/ahorroLG.png
+https://i.ibb.co/ZNZSKZb/automotor-LG.png
+https://i.ibb.co/0V998Yn/bicicleta-LG.png
+https://i.ibb.co/DzfzNc5/casaLG.png
+https://i.ibb.co/nww12qB/corporativos-LG.png
+https://i.ibb.co/LkmGsTW/mercantil-LG.png
+https://i.ibb.co/NN397Ck/trabajador-LG.png
+https://i.ibb.co/gvg73Xb/trabajo-LG.png
+https://i.ibb.co/pXCcCpw/vidaLG.png
+
+
+https://i.ibb.co/0VjPN1Z/seguros-Accidentes-330x330.png
+https://i.ibb.co/Pwz6pL8/seguros-Ahorro-330x330.png
+https://i.ibb.co/qjf5FgH/seguros-Automotor-330x330.png
+https://i.ibb.co/HgGGhYb/seguros-Bicicleta-330x330.png
+https://i.ibb.co/2Kv5Dcq/seguros-Convenio-Mercantil-330x330.png
+https://i.ibb.co/PYthvMs/seguros-Corporativos-330x330.png
+https://i.ibb.co/HFY2DHw/seguros-Hogar-330x330.png
+https://i.ibb.co/ynzkg37/seguros-Trabajadores-330x330.png
+https://i.ibb.co/L0YZZ3k/seguros-Vida-330x330.png
+https://i.ibb.co/5rGLhzm/seguro-Trabajo-330x330.png
